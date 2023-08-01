@@ -51,7 +51,7 @@ ul#giftCard_contents>li{
   top: 0px;
   left: 0px;
 }
-p#card_whiskyType{
+p.card_whiskyType{
   width: 100%;
   height: 52px;
   background-color: #FDE7E7;
@@ -61,11 +61,51 @@ p#card_whiskyType{
   top: 0px;
   left: 0px;
 }
-p#card_image{
-  width: 100%;
+p.card_image{
+  width: 115px;
   height: 115px;
-  position: absolute;
-  top: 112px;
+  margin: 0px auto;
+  margin-top: 60px;
+  position: relative;
+  top: 0px;
   left: 0px;
-  background-color: blue;
+  /* background-color: blue; */
+}
+p.card_price{
+  width: 100%;
+  height: 22px;
+  text-align: center;
+  margin-top: 16px;
+  font: normal 16px/22px 'Noto Sans';
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+button.card_addToCart{
+  width: 128px;
+  height: 36px;
+  background-color: #606C5D;
+  border-style: none;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  margin-left: -64px;
+  font: bold 14px/36px 'Noto Sans';
+  color: white;
+}
+p#section_bar_giftCard{
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: #ccc;
+}
+p#section_bar_giftCard>span{
+  font-size: 26px;
+  color: #ccc;
+  position: absolute;
+  left: 50%;
+  margin-left: -13px;
+  top: -13px;
 }

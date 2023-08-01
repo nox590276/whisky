@@ -1,42 +1,44 @@
 import React from 'react'
+import style from './css/MainVisual_textbox.module.css'
 
 export default function MainVisual_textbox() {
   return (
     <div>
-      <div id='mainVisual_left_wrap'>
 
-        <div id='mainVisual_textBox_wrap'>
-          <section id='mainVisual_textBox'>
-            <p id='mainVisual_main_text'>
+        <div id={style.mainVisual_textBox_wrap}>
+          <section id={style.mainVisual_textBox}>
+            <p id={style.mainVisual_main_text}>
               Unravel the mysteries of hidden whiskies, one glass at  a  time
             </p>
-            <p id='mainVisual_text'>
+            <p id={style.mainVisaul_text}>
               Welcome to our whisky sanctuary, a haven where connoisseurs and enthusiasts unite to celebrate the artistry of this exquisite spirit. Immerse yourself in a world of rare
               expressions, curated selections, and unparalleled knowledge, as we guide you on an extraordinary journey through the depths of whisky's history, flavors, and traditions
             </p>
-            <button id='mainVisual_viewMore'>View More</button>
           </section>
+          <button id={style.mainVisual_viewMore}>View More</button>
         </div>
 
-        <div id='lifeQuotes_box_wrap'>
-          <section id='lifeQuotes_box'>
-            <p id='personImg'>
-              <img src='#' alt='Raymond Chandler(American novelist)' />
+        <p id={style.section_Bar}></p>
+
+        <div id={style.lifeQuotes_box_wrap}>
+          <section id={style.lifeQuotes_box}>
+            <p id={style.personImg}>
+              <img src='./images/Raymond Chandler(American novelist).png' alt='Raymond Chandler(American novelist)' />
             </p>
-            <p id='lifeQuotes_textbox'>
-              <span id='lifeQuotes'>
+            <p id={style.lifeQuotes_textbox}>
+              <span id={style.lifeQuotes}>
                 "There is no such thing as a bad whisky. Some whiskies are just better than others."
               </span>
-              <span id='lifeQuotes_name'>
+              <span id={style.lifeQuotes_name}>
                 Raymond Chandler(American novelist)
               </span>
             </p>
-            <button id='readMore'></button>
+            <button id={style.readMore}>Read more</button>
           </section>
         </div>
 
-      </div>
       
+      <p id={style.section_rightBar}></p>
     </div>
   )
 }

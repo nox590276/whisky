@@ -8,6 +8,8 @@ import RecommendedContents from './Home/RecommendedContents'
 import RecentlyAdded from './Home/RecentlyAdded'
 import SearchBest from './Home/SearchBest'
 import GiftCard from './Home/GiftCard'
+import Popular from './Home/Popular'
+import WiseSaying from './Home/WiseSaying'
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
       <RecentlyAdded/>
       <SearchBest/>
       <GiftCard/>
+      <Popular/>
+      <WiseSaying/>
     </div>
   )
 }
