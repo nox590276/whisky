@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import style from './header.module.css'
+import style from './css/header.module.css'
 import { AiFillCaretDown } from "react-icons/ai";
 import { FaLock } from "react-icons/fa";
 import { FaShoppingBag } from "react-icons/fa";

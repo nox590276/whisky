@@ -8,6 +8,7 @@ import EtcBeverage from './components/EtcBeverage';
 import WhiskySearch from './components/WhiskySearch';
 import Home from './components/Home';
 
+
 function App() {
   const router=createBrowserRouter([
     {
@@ -19,7 +20,7 @@ function App() {
         {path:'/scotchwhisky', element:<ScotchWhisky/>},
         {path:'/whisky', element:<Whisky/>},
         {path:'/etcbeverage', element:<EtcBeverage/>},
-        {path:'/whiskysearch', element:<WhiskySearch/>}
+        {path:'/whiskysearch', element:<WhiskySearch/>},
       ]
     }
   ])
