@@ -1,0 +1,36 @@
+footer#footer_wrap{
+  width: 100%;
+  height: 500px;
+  background-color:#202020;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+div#footer_contents{
+  width: 1400px;
+  height: 100%;
+  margin: 0px auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+p#footer_logo{
+  width: 615px;
+  height: 77px;
+  font: normal 64px/77px 'Lacquer';
+  color: #606C5D;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  margin-left: -307.5px;
+}
+p#sns_icon{
+  width: 123px;
+  height: 21px;
+  font-size: 20px;
+  color: #606C5D;
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  margin-left: -61.5px;
+}

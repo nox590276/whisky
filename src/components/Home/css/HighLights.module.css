@@ -1,0 +1,99 @@
+section#highLights_wrap{
+  width: 100%;
+  height: 1055px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+div#title_box{
+  width: 393px;
+  height: 64px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -196.5px;
+}
+h3.main_title{
+  font: bold 20px/27px 'Noto Sans' ;
+}
+h3#highLight_title{
+  width: 213px;
+  height: 27px;
+  margin: 0 auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+p#highLight_subtitle{
+  width: 295px;
+  top: 20px;
+  margin: 0px auto;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  text-align: center;
+}
+p.main_subtitle{
+  font: normal 15px/20px 'Noto Sans';
+}
+ul#highLights_goods{
+  width: 1400px;
+  height: 494px;
+  margin: 0px auto;
+  position: absolute;
+  bottom: 302px;
+  left: 50%;
+  margin-left: -700px;
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+ul#highLights_goods>li{
+  width: 182px;
+  height: 490px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+ul#highLights_goods>li>img{
+  width: 100%;
+  height: 382px;
+}
+li#balvenie_img{
+  width: 217px;
+  /* background-color: red; */
+}
+li#BOWMOREDISTILLERY6_img{
+  width: 192px;
+  /* background-color: red; */
+}
+div.goods_text{
+  width: 181px;
+  height: 83px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+p.highLight_goodName{
+  width: 100%;
+  height: 22px;
+  font: bold 16px 'Noto Sans';
+  text-align: center;
+  margin-bottom: 10px;
+}
+p.highLight_type{
+  width: 100%;
+  height: 19;
+  font: bold 14px 'Noto Sans';
+  text-align: center;
+  color: #F1C376;
+  margin-bottom: 20px;
+}
+p.highLight_price{
+  width: 100%;
+  height: 22px;
+  font: bold 16px 'Noto Sans';
+  color: #606C5D;
+  text-align: center;
+}

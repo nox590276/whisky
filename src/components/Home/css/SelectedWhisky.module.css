@@ -1,0 +1,70 @@
+section#selectWhisky_wrap{
+  width: 100%;
+  height: 200px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /* background-color: red; */
+}
+div#selectWhisky_checkbox_wrap{
+  width: 1085px;
+  height: 80px;
+  position: absolute;
+  top: 56px;
+  left: 50%;
+  margin-left: -542.5px;
+}
+ul#selectWhisky_checkbox{
+  width: 517px;
+  height: 19px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /* background-color: blue; */
+}
+ul#selectWhisky_checkbox>li{
+  width: 70px;
+  height: 19px;
+  font: normal 14px 'Noto Sans';
+  text-align: center;
+  color: black;
+  /* background-color: red; */
+}
+ul#scroll_box{
+  width: 1085px;
+  height: 19px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  /* margin-left: 542.5px; */
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+ul#scroll_box>li{
+  width: 541px;
+  height: 19px;
+  /* background-color: blue; */
+  display: flex;
+  flex-wrap: wrap;
+}
+span.scroll_title{
+  width: 56px;
+  height: 19px;
+  font: normal 14px 'Noto Sans';
+}
+span.block{
+  width: 485px;
+  height: 5px;
+  border: solid 1px #606C5D;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 7px;
+  /* margin-left: 20px; */
+  /* background-color: red; */
+}

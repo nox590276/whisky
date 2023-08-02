@@ -1,0 +1,54 @@
+section#searchBest_wrap{
+  width: 100%;
+  height: 597px;
+  background-color: #F1C376;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+div#searchBest_contents{
+  width: 1400px;
+  height: 504px;
+  position: absolute;
+  top: 50%;
+  margin-top: -252px;
+  left: 50%;
+  margin-left: -700px;
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+div#searchBest_titlebox{
+  width: 579px;
+  height: 457px;
+  float: left;
+  /* background-color: blue; */
+  margin-top: 23px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+p#searchBest_title{
+  width: 100%;
+  height: 114px;
+  font: bold 40px/57px 'Noto Sans';
+  color: black;
+}
+p#searchBest_text{
+  width: 100%;
+  height: 119px;
+  font: normal 16px 'Noto Sans';
+  margin-top: 62px;
+}
+button#searchBest_moreView{
+  width: 239px;
+  height: 94px;
+  border-style: none;
+  background-color: #606C5D;
+  position: absolute;
+  bottom: 25px;
+  left: 0px;
+  font: bold 20px/94px 'Noto Sans';
+  color: white;
+}

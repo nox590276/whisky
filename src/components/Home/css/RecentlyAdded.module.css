@@ -1,0 +1,68 @@
+section#recentlyAdded_wrap{
+  width: 100%;
+  height: 796px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /* background-color: red; */
+}
+div#recentlyAdded_titlebox{
+  width: 512px;
+  height: 64px;
+  position: absolute;
+  top: 172px;
+  left: 50%;
+  margin-left: -256px;
+}
+p#recentlyAdded_title{
+  width:100%;
+  height: 27px;
+  font: bold 20px/27px 'Noto Sans';
+  text-align: center;
+  margin-bottom: 17px;
+}
+p#recentyleAdded_subtitle{
+  width: 100%;
+  height: 20px;
+  font: normal 15px/20px 'Noto Sans';
+  text-align: center;
+  /* background-color: red; */
+}
+ul#recentlyAdded_goods{
+  width: 1400px;
+  height: 382px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 127px;
+  left: 50%;
+  margin-left: -700px;
+}
+ul#recentlyAdded_goods>li{
+  width: 328px;
+  height: 100%;
+  /* background-color: green; */
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+p#recentlyAdded_img{
+  width: 312px;
+  height: 312px;
+  margin: 0px auto;
+  /* background-color: red; */
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+p#recentlyAdded_goodsName{
+  width: 100%;
+  height: 42px;
+  font: bold 14px/21px 'Noto Sans';
+  /* background-color: red; */
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}

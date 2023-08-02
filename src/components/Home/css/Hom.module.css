@@ -1,0 +1,20 @@
+div#home_wrap{
+  width: 1920px;
+  height: auto;
+  margin: 0px auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /* background-color: blue; */
+  /* background-color: yellow; */
+}
+section#home_wrap{
+  width: 1920px;
+  height: auto;
+  margin: 0px auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /* background-color: blue; */
+  /* background-color: yellow; */
+}

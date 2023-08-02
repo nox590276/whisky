@@ -1,0 +1,19 @@
+[
+  {
+    "id":"001", 
+    "image":"/images/FamousGrouse.jpeg",
+    "name":"Famous Grouse",
+    "type":"whisky",
+    "score":["fas fa-star","fas fa-star","fas fa-star","fas fa-star","fas fa-star"],
+    "price":8.86
+  },  
+  {
+    "id":"002", 
+    "image":"/images/FamousGrouse,jpeg",
+    "name":"Jack Daniels Tennessee Whiskey",
+    "type":"whisky",
+    "score":["fas fa-star","fas fa-star","fas fa-star","fas fa-star","fas fa-star"],
+    "price":17.56
+  }
+  
+]

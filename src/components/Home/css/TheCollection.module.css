@@ -1,0 +1,69 @@
+section#theCollection_wrap{
+  width: 100%;
+  height: 390px;
+  background-image: url('/public/images/Must-drinkBourbonWhiskey_backgorund.png');
+  /* background-color: #ccc; */
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+div#thecollection_contents{
+  width: 1400px;
+  height: 100%;
+  margin: 0px auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+p#thecollection_point{
+  width: 685px;
+  height: 501px;
+  float: left;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+div#collection_textbox{
+  width: 551px;
+  height: 196px;
+  float: right;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  margin-top: -88px;
+}
+p#collecion_title{
+  width: 170px;
+  height: 27px;
+  font: bold 20px/27px 'Noto Sans';
+  color: white;
+  margin: 0px auto;
+}
+p#collection_Main_text{
+  width: 512px;
+  height: 49px;
+  font: bold 36px/49px 'Noto Sans';
+  margin: 0px auto;
+  color: white;
+}
+p#collection_text{
+  width: 551px;
+  left: 22px;
+  margin: 0px auto;
+  font: normal 16px/22px 'Noto Sans';
+  text-align: center;
+  color: white;
+}
+
+button#collection_MoreView{
+  width: 195px;
+  height: 50px;
+  background-color: #606C5D;
+  color: white;
+  font: bold 20px/50px 'Noto Sans';
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -97.5px;
+  border-style: none;
+}

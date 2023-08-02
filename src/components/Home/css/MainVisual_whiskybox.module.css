@@ -1,0 +1,112 @@
+div#mainVisual_whiskybox_wrap{
+  width: 751px;
+  height: 863px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /* background-color: green; */
+}
+section#mainVisual_img_box{
+  width: 100%;
+  height: 863px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /* background-color: blue; */
+}
+ul#mainVisual_img_list{
+  width: 1085px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+ul#mainVisual_img_list>li{
+  width: 542px;
+  height: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /* background-color: red; */
+}
+p.mainVisual_whisky_img{
+  width: 100%;
+  height: 516px;
+  margin-top: 98px;
+  /* background-color: blue; */
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+p.mainVisual_whisky_img>img{
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -146px;
+}
+div.mainVisual_whisky_pricebox{
+  width: 364px;
+  height: 89px;
+  /* background-color: red; */
+  margin-top: 105px;
+  margin-left: 88px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+p.mainVisual_whisky_name{
+  width: 100%;
+  height: 43px;
+  /* background-color: yellow; */
+  font: normal 16px/43px 'Noto Sans';
+}
+p.mainVisual_whisky_section_bar{
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+p.etc_text_box{
+  width: 100%;
+  height: 32px;
+  margin-top: 21px;
+  /* background-color: red; */
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+span.price{
+  font: normal 16px/32px 'Noto Sans';
+}
+button.mainVisual_whisky_add{
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: solid 1px black;
+  border-radius: 16px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+p#mainVisual_imgbar{
+  height: 100%;
+  width: 1px;
+  background-color: #ccc;
+  position: absolute;
+  top: 0px;
+  right: 208px;
+}
+button#mainVisual_ImgNext{
+  width: 154px;
+  height: 154px;
+  border-radius: 77px;
+  background: none;
+  background-color: #F7E6C4;
+  border: solid 1px black;
+  position: absolute;
+  font: normal 20px/154px 'HanziPen TC';
+  right: 130px;
+  top: 106px;
+}

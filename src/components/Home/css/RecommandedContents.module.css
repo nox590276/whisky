@@ -1,0 +1,94 @@
+section#recommanded_wrap{
+  width: 100%;
+  height: 753px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /* background-color: red; */
+}
+div#recommanded_titlebox{
+  width: 279px;
+  height: 64px;
+  position: absolute;
+  top: 165px;
+  left: 50%;
+  margin-left: -139.5px;
+  /* background-color: blue; */
+}
+p#recommanded_title{
+  width: 100%;
+  height: 27px;
+  text-align: center;
+  font: bold 20px/27px 'Noto Sans';
+  margin-bottom: 17px;
+}
+p#recommanded_subtitle{
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  font: normal 15px/20px 'Noto Sans';
+}
+ul#recommanded_goods{
+  width: 1400px;
+  height: 304px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 176px;
+  left: 50%;
+  margin-left: -700px;
+}
+ul#recommanded_goods>li{
+  width: 430px;
+  height: 307px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /* background-color: red; */
+}
+div#recommanded_textbox{
+  width: 196px;
+  height: 45px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -98px;
+  /* background-color: blue; */
+}
+p#recommanded_goodsName{
+  width: 196px;
+  height: 22px;
+  /* background-color: red; */
+  font: bold 14px/22px 'Noto Sans';
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+p#recommanded_type{
+  width: 196px;
+  height: 19px;
+  font: bold 14px/19px 'Noto Sans';
+  text-align: center;
+  color: #F1C376;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+p#section_bar_recommanded{
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: #ccc;
+}
+p#section_bar_recommanded>span{
+  font-size: 26px;
+  color: #ccc;
+  position: absolute;
+  left: 50%;
+  margin-left: -13px;
+  top: -13px;
+}
