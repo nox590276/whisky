@@ -16,7 +16,7 @@ function App() {
       errorElement:<NotFound/>,
       element:<Root/>,
       children:[
-        {index:true, element:<Home/>},
+        {path:'/', element:<Home/>},
         {path:'/scotchwhisky', element:<ScotchWhisky/>},
         {path:'/whisky', element:<Whisky/>},
         {path:'/etcbeverage', element:<EtcBeverage/>},
