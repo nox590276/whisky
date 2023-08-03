@@ -3,17 +3,113 @@
     "id":"001", 
     "image":"/images/FamousGrouse.jpeg",
     "name":"Famous Grouse",
-    "type":"whisky",
+    "type":"Whisky",
     "score":["fas fa-star","fas fa-star","fas fa-star","fas fa-star","fas fa-star"],
     "price":8.86
   },  
   {
     "id":"002", 
-    "image":"/images/FamousGrouse,jpeg",
+    "image":"/images/Jack Daniels.png",
     "name":"Jack Daniels Tennessee Whiskey",
-    "type":"whisky",
+    "type":"Whisky",
     "score":["fas fa-star","fas fa-star","fas fa-star","fas fa-star","fas fa-star"],
     "price":17.56
+  },
+  {
+    "id":"003", 
+    "image":"/images/Three Barrels Rare Old French Brandy.png",
+    "name":"Three Barrels Rare Old French Brandy",
+    "type":"Brandy",
+    "score":["fas fa-star","fas fa-star","fas fa-star","fas fa-star"],
+    "price":15.38
+  },
+  {
+    "id":"004", 
+    "image":"/images/Grant's Family Reserve .png",
+    "name":"Grant's Family Reserve Whisky",
+    "type":"Whisky",
+    "score":["fas fa-star","fas fa-star","fas fa-star","fas fa-star","fas fa-star"],
+    "price":14.55
+  },
+  {
+    "id":"005", 
+    "image":"/images/Absolut Vodka.png",
+    "name":"Absolut Vodka",
+    "type":"Vodka",
+    "score":["fas fa-star","fas fa-star","fas fa-star","fas fa-star","fas fa-star"],
+    "price":10.83
+  },
+  {
+    "id":"006", 
+    "image":"/images/Figenza Fig Vodka Liqueur.png",
+    "name":"Figenza Fig Vodka Liqueur",
+    "type":"Liqueur",
+    "score":["fas fa-star","fas fa-star","fas fa-star","fas fa-star"],
+    "price":14.03
+  },
+  {
+    "id":"007", 
+    "image":"/images/Chase English Potato Vodka.png",
+    "name":"Chase English Potato Vodka",
+    "type":"Vodka",
+    "score":["fas fa-star","fas fa-star","fas fa-star"],
+    "price":26.47
+  },
+  {
+    "id":"008", 
+    "image":"/images/Zubrovka Russian Vodka.png",
+    "name":"Zubrovka Russian Vodka",
+    "type":"Vodka",
+    "score":["fas fa-star","fas fa-star","fas fa-star"],
+    "price":15.31
+  },
+  {
+    "id":"009", 
+    "image":"/images/Gold Wasser Vodka.png",
+    "name":"Gold Wasser Vodka",
+    "type":"Vodka",
+    "score":["fas fa-star","fas fa-star","fas fa-star","fas fa-star","fas fa-star"],
+    "price":19.16
+  },
+  {
+    "id":"010", 
+    "image":"/images/Bacardi Superior Carta Blanca Rum.jpeg",
+    "name":"Bacardi Superior Carta Blanca Rum",
+    "type":"Rum",
+    "score":["fas fa-star","fas fa-star","fas fa-star","fas fa-star"],
+    "price":9.55
+  },
+  {
+    "id":"011", 
+    "image":"/images/Havana Club Anejo Especial Rum.png",
+    "name":"Havana Club Anejo Especial Rum",
+    "type":"Rum",
+    "score":["fas fa-star","fas fa-star","fas fa-star","fas fa-star"],
+    "price":14.67
+  },
+  {
+    "id":"012", 
+    "image":"/images/Lamb's Navy Rum.png",
+    "name":"Lamb's Navy Rum",
+    "type":"Rum",
+    "score":["fas fa-star","fas fa-star","fas fa-star","fas fa-star"],
+    "price":24.55
+  },
+  {
+    "id":"013", 
+    "image":"/images/Ron Calados Spiced Bottling Note.png",
+    "name":"Ron Calados Spiced Bottling Note",
+    "type":"Rum",
+    "score":["fas fa-star","fas fa-star","fas fa-star","fas fa-star"],
+    "price":18.53
+  },
+  {
+    "id":"014", 
+    "image":"/images/Isla N White Rum.png",
+    "name":"Isla N White Rum",
+    "type":"Rum",
+    "score":["fas fa-star","fas fa-star","fas fa-star","fas fa-star","fas fa-star"],
+    "price":19.16
   }
   
 ]
