@@ -7,6 +7,8 @@ import Whisky from './components/Whisky';
 import EtcBeverage from './components/EtcBeverage';
 import WhiskySearch from './components/WhiskySearch';
 import Home from './components/Home';
+import ProductDetail from './pages/ProductDetail';
+import './pages/css/reset.css'
 
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
         {path:'/whisky', element:<Whisky/>},
         {path:'/etcbeverage', element:<EtcBeverage/>},
         {path:'/whiskysearch', element:<WhiskySearch/>},
+        {path:'/whisky/:productId', element:<ProductDetail/>}
       ]
     }
   ])

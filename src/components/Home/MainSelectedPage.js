@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { FaStar } from "react-icons/fa";
 import style from './css/MainSelectedPage.module.css'
 import SelectedWhisky from './SelectWhisky'
@@ -20,12 +20,12 @@ export default function MainSelectedPage() {
     setIsAnyCheckboxChecked(filteredProducts.length > 0);
   }, [filteredProducts])
 
-
+  const navigate=useNavigate()
 
   return (
     <section id={style.mainSelectedPage_wrap}>
       <SelectedWhisky setFilteredProuducts={setFilteredProuducts} />
-      {!isAnyChechboxChaecked? (
+      {!isAnyChechboxChaecked ? (
         <Main />
       )
         : (
@@ -39,9 +39,11 @@ export default function MainSelectedPage() {
                       <p className={style.selectedGoods_name}>{item.name}</p>
                       <p className={style.selectedGoods_type}>{item.type}</p>
                       <div className={style.selectedGoods_scorebox}>
-                        <p className={style.selectedGoods_score}>{item.score.map((score)=>(
-                          <FaStar key={score}/>
-                        ))}</p>
+                        <p className={style.selectedGoods_score}>
+                          {
+                            Array.from({ length: item.score }).map((_, index) => <FaStar key={index} />)
+                          }
+                        </p>
                         <p className={style.selectedGoods_price}>${item.price}</p>
                       </div>
                       <div className={style.selectedGoods_buttonbox}>

@@ -13,7 +13,6 @@ export default function SelectWhisky({setFilteredProuducts}) {
 
 
   const [selectedType, setSelectedType]=useState([])
-  const [typeGoods, setTypeGoods]=useState([])
 
   const handleTypeChange = (e) =>{
     const selectedType = e.target.value;
