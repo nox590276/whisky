@@ -2,16 +2,10 @@ import React, { useEffect, useState } from 'react'
 import style from './css/SelectedWhisky.module.css'
 import axios from 'axios'
 import Main from './Main'
+import useProducts from '../../Hooks/useProducts'
 
 export default function SelectWhisky({setFilteredProuducts}) {
-  const [allProducts, setallProducts] = useState([])
-  useEffect(()=>{
-    axios.get('data/Product.json').then((res)=>{
-      setallProducts(res.data)
-    })
-  },[])
-
-
+  const [allProducts]=useProducts()
   const [selectedType, setSelectedType]=useState([])
 
   const handleTypeChange = (e) =>{

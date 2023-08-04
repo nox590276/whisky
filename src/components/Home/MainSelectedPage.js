@@ -7,12 +7,7 @@ import Main from './Main';
 import axios from 'axios'
 
 export default function MainSelectedPage() {
-  // const [allProducts, setallProducts] = useState([])
-  // useEffect(() => {
-  //   axios.get('data/Product.json').then((res) => {
-  //     setallProducts(res.data)
-  //   })
-  // }, [])
+
   const [filteredProducts, setFilteredProuducts] = useState([]);
   const [isAnyChechboxChaecked, setIsAnyCheckboxChecked] = useState(false);
 
@@ -32,7 +27,9 @@ export default function MainSelectedPage() {
           <ul id={style.selectedGoods_list}>
             {
               filteredProducts.map((item) => (
-                <li key={item.id}>
+                <li key={item.id} onClick={()=>{
+                  navigate( `/whisky/${item.id}`)
+                }}>
                   <Link>
                     <p className={style.selectedGoods_img}><img src={item.image} alt={item.name} /></p>
                     <div className={style.selectedGoods_infobox}>
