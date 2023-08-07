@@ -122,3 +122,8 @@ p.selectedGoods_goToCart{
   right: 0px;
   top: 0px;
 }
+p.selectedGoods_goToCart:hover{
+  background-color: #606C5D;
+  color: white;
+  border-color: #606C5D;
+}

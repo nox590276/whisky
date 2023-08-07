@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import style from './css/SelectedWhisky.module.css'
-import axios from 'axios'
-import Main from './Main'
 import useProducts from '../../Hooks/useProducts'
 
 export default function SelectWhisky({setFilteredProuducts}) {
@@ -18,14 +16,6 @@ export default function SelectWhisky({setFilteredProuducts}) {
       }
     })
   }
-
-  // useEffect(()=>{
-  //   if(selectedType==='Whisky'){
-  //     const typeGoods = allProducts.filter((item)=>(item.type === selectedType))
-  //     setTypeGoods(typeGoods)
-  //   }
-  //   //  // console.log(selectType)
-  // })
 
   useEffect(()=>{
     const filteredProuducts = selectedType.length >= 0

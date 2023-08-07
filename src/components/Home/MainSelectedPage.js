@@ -4,7 +4,6 @@ import { FaStar } from "react-icons/fa";
 import style from './css/MainSelectedPage.module.css'
 import SelectedWhisky from './SelectWhisky'
 import Main from './Main';
-import axios from 'axios'
 
 export default function MainSelectedPage() {
 

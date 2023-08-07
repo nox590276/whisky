@@ -56,6 +56,10 @@ ul#highLights_goods>li{
   top: 0px;
   left: 0px;
 }
+/* ul#highLights_goods>li:hover{
+  background-image:url(/public/images/heightLightBackground.png);
+  background-repeat: no-repeat;
+} */
 ul#highLights_goods>li>img{
   width: 100%;
   height: 382px;
