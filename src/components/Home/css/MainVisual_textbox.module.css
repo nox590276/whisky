@@ -1,5 +1,5 @@
 div#mainVisual_textbox_wrap {
-  width: 1168px;
+  width: 60.8%;
   height: 100%;
   position: relative;
   top: 0px;
@@ -17,10 +17,10 @@ p#section_rightBar {
 }
 
 div#mainVisual_textBox_wrap {
-  width: 996px;
+  width: 85.27%;
   height: 366px;
-  /* background-color: red; */
-  margin-left: 82px;
+  background-color: red;
+  margin-left: 7.02%;
   margin-top: 173px;
   padding-bottom: 103px;
   position: relative;
@@ -87,28 +87,32 @@ div#lifeQuotes_box_wrap {
 }
 
 section#lifeQuotes_box {
-  width: 937px;
+  width: 85.27%;
   height: 157px;
   margin-top: 30px;
-  margin-left: 82px;
+  margin-left: 7.02%;
   position: relative;
   top: 0px;
   left: 0px;
+  background-color: blue;
 }
 
 p#personImg {
-  width: 241px;
+  width: 24.19%;
   height: 100%;
   float: left;
   position: relative;
   top: 0px;
   left: 0px;
 }
+p#personImg>img{
+  width: 100%;
+}
 
 p#lifeQuotes_textbox {
-  width: 387px;
+  width: 38.85%;
   height: 87px;
-  margin-left: 75px;
+  margin-left: 7.53%;
   float: left;
   margin-top: 30px;
   /* background-color: red; */
@@ -141,5 +145,5 @@ button#readMore{
   background: none;
   transform: rotate(-30deg);
   font: normal 16px/157px 'Noto Sans';
-  margin-left: 77px;
+  margin-left: 7.73%;
 }

@@ -1,3 +1,7 @@
+header{
+  width: 100%;
+  height: auto;
+}
 div#header{
   width: 1920px;
   height: 160px;
@@ -12,12 +16,12 @@ div#logo_wrap{
   height: 100%;
   float: left;
 }
-p.logo{
+h1.logo{
   width: 38.09%;
   height: 100%;
   margin: 0px auto;
 }
-p.logo a{
+h1.logo a{
   font: normal 60px/160px 'Lacquer', cursive;
   color: #606C5D;
   text-decoration: none;
@@ -48,8 +52,7 @@ div#language_wrap{
   float: left;
 }
 p#language{
-  width: 14.41%;
-  height: 100%;
+  margin: 0px auto;
   font: lighter 14px/160px 'Noto Sans';
   color: black;
   margin-left: 21.62%;
@@ -60,23 +63,24 @@ div#login_wrap{
   float: left;
 }
 p#login{
-  width: 21.3%;
-  left: 100%;
   font: lighter 14px/160px 'Noto Sans';
   color: black;
-  margin-left: 65.2%;
+  text-align: right;
+  margin-right: 10%;
+  /* background-color: green; */
 }
 div#shoppingBasket_wrap{
   width: 10.8%;
   height: 100%;
   float: left;
+  /* background-color: blue; */
 }
 p#shoppingBasket{
-  width: 32.6%;
-  height: 100%;
-  margin-left: 101px;
+  text-align: right;
+  margin-right: 10%;
   font: lighter 14px/160px 'Noto Sans';
   color: black;
+  /* background-color: red; */
 }
 p.block{
   width: 1px;
@@ -107,3 +111,10 @@ p#header_section_bar{
   top: 0px;
   left: 0px;
 }
+@media screen and (max-width:1920px) {
+  div#header{
+    width: 100%;
+    /* background-color: blue; */
+  }
+}
+

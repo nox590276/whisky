@@ -19,3 +19,8 @@ p#mainVisual_section_bar{
   bottom: 0px;
   left: 0px;
 }
+@media screen and (max-width:1920px) {
+  section#mainVisual_wrap{
+    width: 100%;
+  }
+}

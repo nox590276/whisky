@@ -10,6 +10,9 @@ body{
   top: 0px;
   left: 0px;
 }
+body::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
 /* 상단영역 시작 */
 ul#skipmenu_list li a:focus{
   width: 100%;

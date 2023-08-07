@@ -18,3 +18,11 @@ section#home_wrap{
   /* background-color: blue; */
   /* background-color: yellow; */
 }
+@media screen and (max-width:1920px) {
+  div#home_wrap{
+    width: 100%;
+  }
+  section#home_wrap{
+    width: 100%;
+  }
+}

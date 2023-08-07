@@ -1,5 +1,5 @@
 div#mainVisual_whiskybox_wrap{
-  width: 751px;
+  width: 39.11%;
   height: 863px;
   position: relative;
   top: 0px;
@@ -15,7 +15,7 @@ section#mainVisual_img_box{
   /* background-color: blue; */
 }
 ul#mainVisual_img_list{
-  width: 1085px;
+  width: 144.4%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -25,12 +25,12 @@ ul#mainVisual_img_list{
   left: 0px;
 }
 ul#mainVisual_img_list>li{
-  width: 542px;
+  width: 50%;
   height: 100%;
   position: relative;
   top: 0px;
   left: 0px;
-  /* background-color: red; */
+  background-color: red;
 }
 p.mainVisual_whisky_img{
   width: 100%;
@@ -48,11 +48,11 @@ p.mainVisual_whisky_img>img{
   margin-left: -146px;
 }
 div.mainVisual_whisky_pricebox{
-  width: 364px;
+  width: 67.15%;
   height: 89px;
   /* background-color: red; */
+  margin: 0px auto;
   margin-top: 105px;
-  margin-left: 88px;
   position: relative;
   top: 0px;
   left: 0px;
