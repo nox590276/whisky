@@ -34,30 +34,34 @@ ul#recommanded_goods{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  /* background-color: red; */
   position: absolute;
   bottom: 176px;
   left: 50%;
   margin-left: -700px;
 }
 ul#recommanded_goods>li{
-  width: 430px;
+  width: 30.71%;
   height: 307px;
   position: relative;
   top: 0px;
   left: 0px;
   /* background-color: red; */
 }
+ul#recommanded_goods>li>img{
+  width: 100%;
+}
 div#recommanded_textbox{
-  width: 196px;
+  width: 45.58%;
   height: 45px;
   position: absolute;
   bottom: 0px;
   left: 50%;
-  margin-left: -98px;
+  margin-left: -22.79%;
   /* background-color: blue; */
 }
 p#recommanded_goodsName{
-  width: 196px;
+  width: 100%;
   height: 22px;
   /* background-color: red; */
   font: bold 14px/22px 'Noto Sans';
@@ -67,7 +71,7 @@ p#recommanded_goodsName{
   left: 0px;
 }
 p#recommanded_type{
-  width: 196px;
+  width: 100%;
   height: 19px;
   font: bold 14px/19px 'Noto Sans';
   text-align: center;
@@ -91,4 +95,25 @@ p#section_bar_recommanded>span{
   left: 50%;
   margin-left: -13px;
   top: -13px;
+}
+@media screen and (max-width:1400px) {
+  div#recommanded_titlebox{
+    width: 19.92%;
+  }
+  p#recommanded_title{
+    font: bold 1.42vw/27px 'Noto Sans';
+  }
+  p#recommanded_subtitle{
+    font: normal 1.07vw/20px 'Noto Sans';
+  }
+  ul#recommanded_goods{
+    width: 100%;
+    margin-left: -50%;
+  }
+  p#recommanded_goodsName{
+    font: bold 1vw/22px 'Noto Sans';
+  }
+  p#recommanded_type{
+    font: bold 1vw/19px 'Noto Sans';
+  }
 }

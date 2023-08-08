@@ -40,7 +40,7 @@ ul#recentlyAdded_goods{
   margin-left: -700px;
 }
 ul#recentlyAdded_goods>li{
-  width: 328px;
+  width: 23.42%;
   height: 100%;
   /* background-color: green; */
   position: relative;
@@ -48,7 +48,7 @@ ul#recentlyAdded_goods>li{
   left: 0px;
 }
 p#recentlyAdded_img{
-  width: 312px;
+  width: 95.12%;
   height: 312px;
   margin: 0px auto;
   /* background-color: red; */
@@ -65,4 +65,10 @@ p#recentlyAdded_goodsName{
   position: absolute;
   bottom: 0px;
   left: 0px;
+}
+@media screen and (max-width:1400px) {
+  ul#recentlyAdded_goods{
+    width: 100%;
+    margin-left: -50%;
+  }
 }

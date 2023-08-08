@@ -16,15 +16,22 @@ div#thecollection_contents{
   left: 0px;
 }
 p#thecollection_point{
-  width: 685px;
+  width: 48.92%;
   height: 501px;
   float: left;
   position: absolute;
   bottom: 0px;
   left: 0px;
+  /* background-color: red; */
+}
+p#thecollection_point>img{
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 div#collection_textbox{
-  width: 551px;
+  width: 39.35%;
   height: 196px;
   float: right;
   position: absolute;
@@ -33,21 +40,21 @@ div#collection_textbox{
   margin-top: -88px;
 }
 p#collecion_title{
-  width: 170px;
+  width: 30.85%;
   height: 27px;
   font: bold 20px/27px 'Noto Sans';
   color: white;
   margin: 0px auto;
 }
 p#collection_Main_text{
-  width: 512px;
+  width: 92.9%;
   height: 49px;
   font: bold 36px/49px 'Noto Sans';
   margin: 0px auto;
   color: white;
 }
 p#collection_text{
-  width: 551px;
+  width: 100%;
   left: 22px;
   margin: 0px auto;
   font: normal 16px/22px 'Noto Sans';
@@ -56,7 +63,7 @@ p#collection_text{
 }
 
 button#collection_MoreView{
-  width: 195px;
+  width: 35.39%;
   height: 50px;
   background-color: #606C5D;
   color: white;
@@ -66,4 +73,21 @@ button#collection_MoreView{
   left: 50%;
   margin-left: -97.5px;
   border-style: none;
+}
+@media screen and (max-width:1400px) {
+  div#thecollection_contents{
+    width: 100%;
+  }
+  p#collecion_title{
+    font: bold 1.42vw/27px 'Noto Sans';
+  }
+  p#collection_Main_text{
+    font: bold 2.57vw/49px 'Noto Sans';
+  }
+  p#collection_text{
+    font: normal 1.14vw/22px 'Noto Sans';
+  }
+  button#collection_MoreView{
+    font: bold 1.42vw/50px 'Noto Sans';
+  }
 }
