@@ -19,7 +19,7 @@ p#section_rightBar {
 div#mainVisual_textBox_wrap {
   width: 85.27%;
   height: 366px;
-  background-color: red;
+  /* background-color: red; */
   margin-left: 7.02%;
   margin-top: 173px;
   padding-bottom: 103px;
@@ -94,7 +94,7 @@ section#lifeQuotes_box {
   position: relative;
   top: 0px;
   left: 0px;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 p#personImg {

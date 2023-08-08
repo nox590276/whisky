@@ -30,7 +30,7 @@ ul#mainVisual_img_list>li{
   position: relative;
   top: 0px;
   left: 0px;
-  background-color: red;
+  /* background-color: red; */
 }
 p.mainVisual_whisky_img{
   width: 100%;
