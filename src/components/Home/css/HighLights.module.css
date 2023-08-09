@@ -57,11 +57,12 @@ ul#highLights_goods>li{
   top: 0px;
   left: 0px;
 }
-/* ul#highLights_goods>li:hover{
-  background-image:url(/public/images/heightLightBackground.png);
-  background-repeat: no-repeat;
-} */
+ul#highLights_goods>li:hover img{
+  transform: scale(1.1);
+}
 ul#highLights_goods>li>img{
+  transition: 0.3s ease-in-out;
+  transform: scale(1);
   width: 100%;
   /* background-color: green; */
 }

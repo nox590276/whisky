@@ -8,14 +8,14 @@ export default function WiseSaying() {
     <section id={style.wiseSaying_wrap}>
       <div id={style.wiseSaying_contents}>
         <p id={style.wiseSaying_img}>
-        <img src='./images/ Haruki Murakami.png' alt='Haruki Murakami' />
+          <img src='./images/ Haruki Murakami.png' alt='Haruki Murakami' />
         </p>
         <p id={style.wiseSaying_textbox}>
-        "Whiskey, like a beautiful woman, demands appreciation. You gaze first, then <br/>
-        it's time to drink." - Haruki Murakami
+          "Whiskey, like a beautiful woman, demands appreciation. You gaze first, then <br />
+          it's time to drink." - Haruki Murakami
         </p>
         <button id={style.left}><FaAngleLeft /></button>
-      <button id={style.right}><FaAngleRight /></button>
+        <button id={style.right}><FaAngleRight /></button>
       </div>
     </section>
   )

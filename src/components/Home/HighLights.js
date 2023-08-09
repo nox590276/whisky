@@ -2,6 +2,7 @@ import React from 'react'
 import style from './css/HighLights.module.css'
 
 export default function HighLights() {
+  
   return (
     <section id={style.highLights_wrap}>
       <div id='hightLights'>
