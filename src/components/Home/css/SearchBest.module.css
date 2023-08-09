@@ -20,7 +20,7 @@ div#searchBest_contents{
   justify-content: space-between;
 }
 div#searchBest_titlebox{
-  width: 579px;
+  width: 41.35%;
   height: 457px;
   float: left;
   /* background-color: blue; */
@@ -42,7 +42,7 @@ p#searchBest_text{
   margin-top: 62px;
 }
 button#searchBest_moreView{
-  width: 239px;
+  width: 41.27%;
   height: 94px;
   border-style: none;
   background-color: #606C5D;
@@ -51,4 +51,26 @@ button#searchBest_moreView{
   left: 0px;
   font: bold 20px/94px 'Noto Sans';
   color: white;
+}
+div#searchBest_pointImg{
+  width: 48.07%;
+  float: left;
+}
+div#searchBest_pointImg>img{
+  width: 100%;
+}
+@media screen and (max-width:1400px) {
+  div#searchBest_contents{
+    width: 100%;
+    margin-left: -50%;
+  }
+  p#searchBest_title{
+    font-size: 2.85vw;
+  }
+  p#searchBest_text{
+    font-size: 1.14vw;
+  }
+  button#searchBest_moreView{
+    font-size: 1.42vw;
+  }
 }

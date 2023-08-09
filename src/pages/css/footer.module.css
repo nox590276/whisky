@@ -10,27 +10,41 @@ div#footer_contents{
   width: 1400px;
   height: 100%;
   margin: 0px auto;
+  /* background-color: blue; */
   position: relative;
   top: 0px;
   left: 0px;
 }
 p#footer_logo{
-  width: 615px;
+  width: 43.92%;
   height: 77px;
   font: normal 64px/77px 'Lacquer';
+  text-align: center;
   color: #606C5D;
   position: absolute;
   top: 150px;
   left: 50%;
-  margin-left: -307.5px;
+  margin-left: -21.96%;
+  /* background-color: red; */
 }
 p#sns_icon{
-  width: 123px;
+  width: 8.78%;
   height: 21px;
   font-size: 20px;
   color: #606C5D;
   position: absolute;
   bottom: 150px;
   left: 50%;
-  margin-left: -61.5px;
+  margin-left: -4.39%;
+}
+@media screen and (max-width:1400px) {
+  div#footer_contents{
+    width: 100%;
+  }
+  p#footer_logo{
+    font-size: 4.57vw;
+  }
+  p#sns_icon{
+    font-size: 1.42vw;
+  }
 }

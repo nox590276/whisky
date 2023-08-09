@@ -15,7 +15,7 @@ export default function SearchBest() {
             Not sure which one to buy? </p>
             <button id={style.searchBest_moreView}>MORE VIEW</button>
         </div>
-        <div id='searchBest_pointImg'><img src='./images/searchBest_point.png' alt=''/></div>
+        <div id={style.searchBest_pointImg}><img src='./images/searchBest_point.png' alt=''/></div>
       </div>
     </section>
   )

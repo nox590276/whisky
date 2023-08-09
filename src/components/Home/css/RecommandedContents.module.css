@@ -99,6 +99,7 @@ p#section_bar_recommanded>span{
 @media screen and (max-width:1400px) {
   div#recommanded_titlebox{
     width: 19.92%;
+    margin-left: -9.96%;
   }
   p#recommanded_title{
     font: bold 1.42vw/27px 'Noto Sans';

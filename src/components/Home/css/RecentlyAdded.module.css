@@ -56,6 +56,9 @@ p#recentlyAdded_img{
   top: 0px;
   left: 0px;
 }
+p#recentlyAdded_img>img{
+  width: 100%;
+}
 p#recentlyAdded_goodsName{
   width: 100%;
   height: 42px;
@@ -70,5 +73,16 @@ p#recentlyAdded_goodsName{
   ul#recentlyAdded_goods{
     width: 100%;
     margin-left: -50%;
+  }
+  p#recentlyAdded_goodsName{
+    font: bold 1vw/21px 'Noto Sans';
+    text-align: center;
+  }
+  div#recentlyAdded_titlebox{
+    width: 36.57%;
+    margin-left: -18.285%;
+  }
+  p#recentlyAdded_title{
+    font: bold 1.42vw/27px 'Noto Sans';
   }
 }

@@ -17,7 +17,7 @@ h3.main_title{
   font: bold 20px/27px 'Noto Sans' ;
 }
 h3#highLight_title{
-  width: 213px;
+  width: 54.19%;
   height: 27px;
   margin: 0 auto;
   position: relative;
@@ -25,7 +25,7 @@ h3#highLight_title{
   left: 0px;
 }
 p#highLight_subtitle{
-  width: 295px;
+  width: 75.06%;
   top: 20px;
   margin: 0px auto;
   position: relative;
@@ -37,21 +37,21 @@ p.main_subtitle{
   font: normal 15px/20px 'Noto Sans';
 }
 ul#highLights_goods{
-  width: 72.91%;
-  height: 494px;
+  width: 1400px;
+  height: 520px;
   margin: 0px auto;
   position: absolute;
-  bottom: 302px;
+  bottom: 320px;
   left: 50%;
-  margin-left: -36.45%;
+  margin-left: -700px;
   /* background-color: red; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 ul#highLights_goods>li{
-  width: 13%;
-  height: 490px;
+  width: 16.28%;
+  height: 520px;
   /* background-color: red; */
   position: relative;
   top: 0px;
@@ -63,13 +63,14 @@ ul#highLights_goods>li{
 } */
 ul#highLights_goods>li>img{
   width: 100%;
+  /* background-color: green; */
 }
 li#balvenie_img{
-  width: 217px;
+  width: 95.17%;
   /* background-color: red; */
 }
 li#BOWMOREDISTILLERY6_img{
-  width: 192px;
+  width: 84.21%;
   /* background-color: red; */
 }
 div.goods_text{
@@ -79,13 +80,15 @@ div.goods_text{
   position: absolute;
   bottom: 0px;
   left: 0px;
+  margin-top: 3%;
+  box-sizing: border-box;
 }
 p.highLight_goodName{
   width: 100%;
   height: 22px;
   font: bold 0.83vw 'Noto Sans';
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 3%;
 }
 p.highLight_type{
   width: 100%;
@@ -93,7 +96,7 @@ p.highLight_type{
   font: bold 0.72vw 'Noto Sans';
   text-align: center;
   color: #F1C376;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
 }
 p.highLight_price{
   width: 100%;
@@ -102,8 +105,19 @@ p.highLight_price{
   color: #606C5D;
   text-align: center;
 }
-@media screen and (max-width:1920px) {
-  section#highLights_wrap{
+@media screen and (max-width:1400px) {
+  div#title_box{
+    width: 28.07%;
+    margin-left: -14.03%;
+  }
+  h3.main_title{
+    font-size: 1.42vw;
+  }
+  p.main_subtitle{
+    font-size: 1.07vw;
+  }
+  ul#highLights_goods{
     width: 100%;
+    margin-left: -50%;
   }
 }

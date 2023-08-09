@@ -32,19 +32,19 @@ p#giftCard_subtitle{
   left: 0px;
 }
 ul#giftCard_contents{
-  width: 1148px;
+  width: 1400px;
   height: 355px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   /* background-color: red; */
   position: absolute;
   bottom: 182px;
   left: 50%;
-  margin-left: -574px;
+  margin-left: -700px;
 }
 ul#giftCard_contents>li{
-  width: 312px;
+  width: 22.28%;
   height: 355px;
   background-color: #FFF4F4;
   position: relative;
@@ -62,14 +62,16 @@ p.card_whiskyType{
   left: 0px;
 }
 p.card_image{
-  width: 115px;
-  height: 115px;
+  width: 36.85%;
   margin: 0px auto;
   margin-top: 60px;
   position: relative;
   top: 0px;
   left: 0px;
   /* background-color: blue; */
+}
+p.card_image>img{
+  width: 100%;
 }
 p.card_price{
   width: 100%;
@@ -108,4 +110,29 @@ p#section_bar_giftCard>span{
   left: 50%;
   margin-left: -13px;
   top: -13px;
+}
+@media screen and (max-width:1400px){
+  div#giftCard_titlebox{
+    width: 27.35%;
+    margin-left: -13.67%;
+  }
+  ul#giftCard_contents{
+    width: 100%;
+    margin-left: -50%;
+  }
+  p#giftCard_title{
+    font-size: 1.42vw;
+  }
+  p#giftCard_subtitle{
+    font-size: 1.07vw;
+  }
+  p.card_whiskyType{
+    font-size: 1.71vw;
+  }
+  p.card_price{
+    font-size: 1.14vw;
+  }
+  button.card_addToCart{
+    font-size: 1vw;
+  }
 }

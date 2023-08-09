@@ -16,15 +16,17 @@ div#wiseSaying_contents{
   left: 0px;
 }
 p#wiseSaying_img{
-  width: 90px;
-  height: 90px;
+  width: 6.42%;
   position: absolute;
   top: 96px;
   left: 50%;
-  margin-left: -45px;
+  margin-left: -3.21%;
+}
+p#wiseSaying_img>img{
+  width: 100%;
 }
 p#wiseSaying_textbox{
-  width: 724px;
+  width: 51.71%;
   height: 61px;
   font: normal 20px/30px 'Noto Sans';
   color: white;
@@ -32,12 +34,12 @@ p#wiseSaying_textbox{
   position: absolute;
   bottom: 88px;
   left: 50%;
-  margin-left: -362px;
+  margin-left: -25.85%;
 }
 button#left{
-  width: 32px;
+  width: 2.28%;
   height: 100%;
-  font: normal 32px/374px 'Noto sans';
+  font: normal 2.28vw/374px 'Noto sans';
   color: white;
   border-style: none;
   background: none;
@@ -47,9 +49,9 @@ button#left{
   top: 0px;
 }
 button#right{
-  width: 32px;
+  width: 2.28%;
   height: 100%;
-  font: normal 32px/374px 'Noto sans';
+  font: normal 2.28vw/374px 'Noto sans';
   color: white;
   border-style: none;
   background: none;
@@ -57,4 +59,12 @@ button#right{
   position: absolute;
   right: 0px;
   top: 0px;
+}
+@media screen and (max-width:1400px) {
+  div#wiseSaying_contents{
+    width: 100%;
+  }
+  p#wiseSaying_textbox{
+    font-size: 1.42vw;
+  }
 }
