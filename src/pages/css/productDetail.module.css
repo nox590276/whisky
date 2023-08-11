@@ -1,0 +1,157 @@
+div#productDetail_wrap{
+  width: 100%;
+  height: 970px;
+  background-color: white;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+section#productDetail{
+  width: 1400px;
+  height: 100%;
+  margin: 0px auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+div#productDetail_imgBox{
+  width: 710px;
+  height: 100%;
+  float: left;
+  /* background-color: blue; */
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+p#productDetail_img{
+  width: 506px;
+  margin-top: 150px;
+  margin-left: 76px;
+}
+p#productDetail_img>img{
+  width: 100%;
+}
+p#detail_section_bar{
+  width: 1px;
+  height: 848px;
+  background-color: #ccc;
+  margin-top: 60px;
+  float: left;
+}
+div#productDetail_infoBox_wrap{
+  width: 689px;
+  height: 100%;
+  float: left;
+  /* background-color: red; */
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+div#productDetail_infoBox{
+  width: 634px;
+  height: 397px;
+  /* background-color: green; */
+  margin-top: 250px;
+  margin-left: 55px;
+}
+div#product_title{
+  width: 100%;
+  height: 44px;
+  /* background-color: blue; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+p#productD_name{
+  width: 583px;
+  height: 100%;
+  font: bold 32px/44px 'Noto Sans';
+  color: #606C5D;
+}
+p#productD_type{
+  width: 51px;
+  height: 100%;
+  font: normal 14px/44px 'Noto Sans';
+  color: #ccc;
+}
+p#alcohol_level{
+  width: 100%;
+  height: 27px;
+  font: normal 20px/27px 'Noto Sans';
+  /* background-color: white; */
+  margin-top: 48px;
+}
+div#productDetail_pricetitle{
+  width: 100%;
+  height: 44px;
+  margin-top: 23px;
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+p#price{
+  width: 83px;
+  height: 44px;
+  font: bold 32px/44px 'Noto Sans';
+  color: #606C5D;
+}
+p#score{
+  width: 150px;
+  height: 44px;
+  font: bold 28px/44px 'Noto Sans';
+  color: #606C5D;
+}
+p#info_bar{
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+p#detail_text{
+  width: 100%;
+  height: 66px;
+  font: normal 16px/22px 'Noto Sans';
+  color: #aaa;
+  justify-content: baseline;
+  margin-top: 31px;
+}
+div#danger_box{
+  width: 100%;
+  height: 58px;
+  /* background-color: yellow; */
+  margin-top: 47px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+p#danger_text{
+  width: 100%;
+  height: 16px;
+  font: normal 12px/16px 'Noto sans';
+  color: #F1C376;
+  margin-bottom: 10px;
+}
+p#num{
+  width: 40px;
+  height: 35px;
+  border: solid 1px #ccc;
+  box-sizing: border-box;
+  background-color: white;
+  font: normal 16px/35px 'Noto Sans';
+  color: black;
+  float: left;
+}
+button#addToCart{
+  width: 343px;
+  height: 35px;
+  background-color: #F1C376;
+  font: normal 14px/35px 'Noto Sans';
+  color: white;
+  text-align: center;
+  border: none;
+  float: left;
+  margin-left: 10px;
+}
