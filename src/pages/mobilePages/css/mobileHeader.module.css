@@ -1,0 +1,90 @@
+html, body{
+  height: 100%;
+  background-color: #F7E6C4;
+}
+header{
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  /* background-color: red; */
+}
+h2#M_logo{
+  width: 70px;
+  height: 70px;
+  font: normal 40px/70px 'Lacquer';
+  text-align: center;
+  color: #606C5D;
+  float: left;
+}
+p#M_shoppingListIcon{
+  width: 30px;
+  height: 70px;
+  font: normal 30px/70px 'Noto Sans';
+  color: #606C5D;
+  float: right;
+}
+p#M_menuIcon{
+  width: 30px;
+  height: 70px;
+  font: normal 30px/70px 'Noto Sans';
+  color: #606C5D;
+  float: right;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+nav#M_menu_wrap{
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+  overflow: scroll;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 10;
+}
+div#M_info_wrap{
+  width: 100%;
+  height: 134px;
+  background-color: #606C5D;
+}
+p#back_icon{
+  width: 100%;
+  height: 50px;
+  font: normal 20px/50px 'Noto Sans';
+  color: white;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+ul#M_btnList{
+  width: 100%;
+  height: 84px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+ul#M_btnList>li{
+  width: 50px;
+  height: 100%;
+  /* background-color: red; */
+  color: white;
+}
+p.btn_icon{
+  font: normal 25px/25px 'Notos Sans';
+  text-align: center;
+  /* background-color: blue; */
+}
+p.btn_title{
+  font: normal 12px/32px 'Noto Sans';
+  text-align: center;
+  /* background-color: red; */
+}
+ul#M_menu_wrap{
+  width: 100%;
+  height: 220px;
+  background-color: #F7E6C4;
+}
