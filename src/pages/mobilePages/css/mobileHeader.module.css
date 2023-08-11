@@ -88,3 +88,48 @@ ul#M_menu_wrap{
   height: 220px;
   background-color: #F7E6C4;
 }
+ul#M_menu_wrap>li{
+  width: 100%;
+  height: 55px;
+  font: normal 16px/55px 'Noto Sans';
+  text-indent: 20px;
+  box-sizing: border-box;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+span.M_arrowIcon{
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  display: block;
+  text-indent: 0px;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  transform:rotate(0deg);
+  -webkit-transition:0.4s ease; 
+  /* background-color: red; */
+}
+span.M_arrowIcon>img{
+  width: 20%;
+}
+ul#M_menu_wrap>li.selected span{
+  -webkit-transform:rotate(-90deg); 
+}
+ul.M_subMenuWrap{
+  width: 100%;
+  position: absolute;
+  top: 55px;
+  left: 0px;
+}
+ul.M_subMenuWrap>li{
+  width:100%; 
+  height:55px; 
+  background:white; 
+  font:normal 13px/50px 'Noto Sans'; 
+  color: #606C5D;
+  box-sizing:border-box; 
+  text-indent:30px; 
+}

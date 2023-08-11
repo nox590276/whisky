@@ -26,24 +26,24 @@ export default function MobileHeader() {
         </ul>
         </div>
         <ul id={style.M_menu_wrap}>
-          <li>Scotch Whisky<span><img src='./images/M_menu_list.svg' /></span>
+          <li>Scotch Whisky<span className={style.M_arrowIcon}><img src='./images/M_menu_list.svg' /></span>
             <ul className='M_subMenuWrap'>
               <li>sub1</li>
             </ul>
           </li>
-          <li>Whisky<span><img src='./images/M_menu_list.svg' /></span>
+          <li>Whisky<span className={style.M_arrowIcon}><img src='./images/M_menu_list.svg' /></span>
             <ul className='M_subMenuWrap'>
               <li>sub1</li>
               <li>sub2</li>
               <li>sub3</li>
             </ul>
           </li>
-          <li>Etc Beverage<span><img src='./images/M_menu_list.svg' /></span>
+          <li>Etc Beverage<span className={style.M_arrowIcon}><img src='./images/M_menu_list.svg' /></span>
             <ul className='M_subMenuWrap'>
               <li>sub1</li>
             </ul>
           </li>
-          <li>Whisky Search<span><img src='./images/M_menu_list.svg' /></span></li>
+          <li>Whisky Search<span className={style.M_arrowIcon}><img src='./images/M_menu_list.svg' /></span></li>
         </ul>
       </nav>
     </header>
