@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { TbMenu2 } from "react-icons/tb";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { FaLock } from "react-icons/fa";
@@ -8,12 +8,18 @@ import { FaUser } from "react-icons/fa";
 import { MdArrowBack } from "react-icons/md";
 import { MdNotificationsNone } from "react-icons/md";
 import style from './css/mobileHeader.module.css'
+import { gsap } from 'gsap';
 
 export default function MobileHeader() {
+  const M_menu_wrap=useRef()
+
+  const activateMenu = ()=>{
+    gsap.to()
+  }
   return (
     <header id={style.header}>
       <h2 id={style.M_logo}>W</h2>
-      <p id={style.M_menuIcon}><TbMenu2 /></p>
+      <p id={style.M_menuIcon} onClick={activateMenu}><TbMenu2 /></p>
       <p id={style.M_shoppingListIcon}><HiOutlineShoppingCart /></p>
       <nav id={style.M_menu_wrap}>
         <div id={style.M_info_wrap}>

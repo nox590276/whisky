@@ -1,8 +1,5 @@
-html, body{
-  height: 100%;
-  background-color: #F7E6C4;
-}
-header{
+
+header#M_Header{
   width: 100%;
   height: 70px;
   position: absolute;
