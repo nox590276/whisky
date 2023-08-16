@@ -1,0 +1,55 @@
+{
+  "products": {
+    "001": {
+      "id": "001",
+      "image": "/images/FamousGrouse.jpeg",
+      "name": "Famous Grouse",
+      "type": "Whisky",
+      "score": 5,
+      "price": 8.86,
+      "alcohol": 20
+    },
+    "002": {
+      "id": "002",
+      "image": "/images/Jack Daniels.png",
+      "name": "Jack Daniels Tennessee Whiskey",
+      "type": "Whisky",
+      "score": 5,
+      "price": 17.56,
+      "alcohol": 40
+    },
+    "003":{
+      "id": "003",
+      "image": "/images/Three Barrels Rare Old French Brandy.png",
+      "name": "Three Barrels Rare Old French Brandy",
+      "type": "Brandy",
+      "score": 4,
+      "price": 15.38,
+      "alcohol": 35
+    },
+    "004":{
+      "id": "004",
+      "image": "/images/Grant's Family Reserve .png",
+      "name": "Grant's Family Reserve Whisky",
+      "type": "Whisky",
+      "score": 5,
+      "price": 14.55,
+      "alcohol": 40
+    },
+    "005":{
+      "id": "005",
+      "image": "/images/Absolut Vodka.png",
+      "name": "Absolut Vodka",
+      "type": "Vodka",
+      "score": 5,
+      "price": 10.83,
+      "alcohol": 40
+    }
+  }
+}//파이어베이스는 배열이 불가능하고, 다 객체로 바꿔서 사용해줘야한다.
+
+
+
+
+
+
