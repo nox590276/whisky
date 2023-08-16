@@ -1,10 +1,9 @@
-header#M_Header{
+header#M_header{
   width: 100%;
   height: 70px;
-  position: absolute;
+  position: relative;
   top: 0px;
   left: 0px;
-  z-index: 1;
   /* background-color: red; */
 }
 h2#M_logo{
@@ -14,6 +13,7 @@ h2#M_logo{
   text-align: center;
   color: #606C5D;
   float: left;
+  /* background-color: red; */
 }
 p#M_shoppingListIcon{
   width: 30px;
@@ -32,7 +32,7 @@ p#M_menuIcon{
   margin-left: 10px;
 }
 nav#M_menu_wrap{
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: #eee;
   overflow: scroll;
@@ -81,7 +81,7 @@ p.btn_title{
 }
 ul#M_menu_wrap{
   width: 100%;
-  height: 220px;
+  height: 100vh;
   background-color: #F7E6C4;
 }
 ul#M_menu_wrap>li{
@@ -94,6 +94,7 @@ ul#M_menu_wrap>li{
   top: 0px;
   left: 0px;
   overflow: hidden;
+  transition: 0.3s ease-out;
 }
 span.M_arrowIcon{
   width: 55px;
@@ -112,16 +113,17 @@ span.M_arrowIcon>img{
   width: 20%;
 }
 ul#M_menu_wrap>li.selected span{
-  -webkit-transform:rotate(-90deg); 
+  -webkit-transform:rotate(90deg); 
 }
 ul.M_subMenuWrap{
-  width: 100%;
+  width: 100vw;
+  height: auto;
   position: absolute;
   top: 55px;
   left: 0px;
 }
 ul.M_subMenuWrap>li{
-  width:100%; 
+  width:100vw; 
   height:55px; 
   background:white; 
   font:normal 13px/50px 'Noto Sans'; 
