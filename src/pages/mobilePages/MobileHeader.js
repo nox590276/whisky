@@ -17,7 +17,7 @@ export default function MobileHeader() {
     gsap.to()
   }
   return (
-    <header id={style.header}>
+    <header id={style.M_header}>
       <h2 id={style.M_logo}>W</h2>
       <p id={style.M_menuIcon} onClick={activateMenu}><TbMenu2 /></p>
       <p id={style.M_shoppingListIcon}><HiOutlineShoppingCart /></p>
