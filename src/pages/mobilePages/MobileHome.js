@@ -8,7 +8,7 @@ import MH_selectedWhisky from './MH_selectedWhisky'
 
 export default function MobileHome() {
   return (
-    <section id='mobileHome_wrap'>
+    <section style={{overflow:'hidden'}}>
       <MH_userBox/>
       <MH_mainVIsualCard/>
       <MH_higihtLights/>
