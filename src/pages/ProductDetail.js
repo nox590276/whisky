@@ -21,26 +21,25 @@ export default function ProductDetail() {
   }, [productId])
   return (
     <>
-      {productItem.map((item) => (
         <div id={style.productDetail_wrap}>
           <section id={style.productDetail}>
             <div id={style.productDetail_imgBox}>
               <p id={style.productDetail_img}>
-                <img src={item.image} alt={item.name} />
+                <img src={productItem.image} alt={productItem.name} />
               </p>
             </div>
             <p id={style.detail_section_bar}></p>
             <div id={style.productDetail_infoBox_wrap}>
               <div id={style.productDetail_infoBox}>
                 <div id={style.product_title}>
-                  <p id={style.productD_name}>{item.name}</p>
-                  <p id={style.productD_type}>{item.type}</p>
+                  <p id={style.productD_name}>{productItem.name}</p>
+                  <p id={style.productD_type}>{productItem.type}</p>
                 </div>
                 <p id={style.alcohol_level}>20cl</p>
                 <div id={style.productDetail_pricetitle}>
-                  <p id={style.price}>${item.price}</p>
+                  <p id={style.price}>${productItem.price}</p>
                   <p id={style.score}>
-                    {Array.from({ length: item.score }).map((_, index) => <FaStar key={index} />)}
+                    {Array.from({ length: productItem.score }).map((_, index) => <FaStar key={index} />)}
                   </p>
                 </div>
                 <p id={style.info_bar}></p>
@@ -59,8 +58,6 @@ export default function ProductDetail() {
 
           </section>
         </div>
-      ))
-      }
     </>
   )
 }
