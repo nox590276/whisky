@@ -18,7 +18,7 @@
       "price": 17.56,
       "alcohol": 40
     },
-    "003":{
+    "003": {
       "id": "003",
       "image": "/images/Three Barrels Rare Old French Brandy.png",
       "name": "Three Barrels Rare Old French Brandy",
@@ -27,7 +27,7 @@
       "price": 15.38,
       "alcohol": 35
     },
-    "004":{
+    "004": {
       "id": "004",
       "image": "/images/Grant's Family Reserve .png",
       "name": "Grant's Family Reserve Whisky",
@@ -36,7 +36,7 @@
       "price": 14.55,
       "alcohol": 40
     },
-    "005":{
+    "005": {
       "id": "005",
       "image": "/images/Absolut Vodka.png",
       "name": "Absolut Vodka",
@@ -44,12 +44,114 @@
       "score": 5,
       "price": 10.83,
       "alcohol": 40
+    },
+    "006": {
+      "id": "006",
+      "image": "/images/Figenza Fig Vodka Liqueur.png",
+      "name": "Figenza Fig Vodka Liqueu",
+      "type": "Liqueur",
+      "score": 4,
+      "price": 14.03,
+      "alcohol": 31
+    },
+    "007": {
+      "id": "007",
+      "image": "/images/Chase English Potato Vodka.png",
+      "name": "Chase English Potato Vodka",
+      "type": "Vodka",
+      "score": 3,
+      "price": 26.47,
+      "alcohol": 40
+    },
+    "008": {
+      "id": "008",
+      "image": "/images/Zubrovka Russian Vodka.png",
+      "name": "Zubrovka Russian Vodka",
+      "type": "Vodka",
+      "score": 3,
+      "price": 15.31,
+      "alcohol": 40
+    },
+    "009": {
+      "id": "009",
+      "image": "/images/Gold Wasser Vodka.png",
+      "name": "Gold Wasser Vodka",
+      "type": "Vodka",
+      "score": 5,
+      "price": 19.16,
+      "alcohol": 40
+    },
+    "010": {
+      "id": "010",
+      "image": "/images/Bacardi Superior Carta Blanca Rum.jpeg",
+      "name": "Bacardi Superior Carta Blanca Rum",
+      "type": "Rum",
+      "score": 4,
+      "price": 9.55,
+      "alcohol": 37.5
+    },
+    "011": {
+      "id": "011",
+      "image": "/images/Havana Club Anejo Especial Rum.png",
+      "name": "Havana Club Anejo Especial Rum",
+      "type": "Rum",
+      "score": 4,
+      "price": 14.67,
+      "alcohol": 40
+    },
+    "12": {
+      "id": "012",
+      "image": "/images/Lamb's Navy Rum.png",
+      "name": "Lamb's Navy Rum",
+      "type": "Rum",
+      "score": 4,
+      "price": 24.55,
+      "alcohol": 40
+    },
+    "13": {
+      "id": "013",
+      "image": "/images/Ron Calados Spiced Bottling Note.png",
+      "name": "Ron Calados Spiced Bottling Note",
+      "type": "Rum",
+      "score": 4,
+      "price": 18.53,
+      "alcohol": 35
+    },
+    "14": {
+      "id": "014",
+      "image": "/images/Isla N White Rum.png",
+      "name": "Isla N White Rum",
+      "type": "Rum",
+      "score": 5,
+      "price": 19.16,
+      "alcohol": 40
+    },
+    "15": {
+      "id": "015",
+      "image": "/images/Jose Cuervo.png",
+      "name": "Jose Cuervo",
+      "type": "Tequila",
+      "score": 5,
+      "price": 33.89,
+      "alcohol": 40
+    },
+    "16": {
+      "id": "016",
+      "image": "/images/Pepe Lopez.png",
+      "name": "Pepe Lopez",
+      "type": "Tequila",
+      "score": 4,
+      "price": 28.50,
+      "alcohol": 40
+    },
+    "17": {
+      "id": "017",
+      "image": "/images/HENDRICK'S LUNAR GIN.png",
+      "name": "HENDRICK'S LUNAR GIN",
+      "type": "Jin",
+      "score": 5,
+      "price": 69.31,
+      "alcohol": 43
     }
   }
 }
-
-
-
-
-
-

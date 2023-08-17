@@ -4,17 +4,21 @@ import { useParams } from 'react-router-dom'
 import { FaStar } from "react-icons/fa";
 import { FaRegHandPaper } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
-import useProducts from '../Hooks/useProducts';
+// import useProducts from '../Hooks/useProducts';
+import { getProductDetail } from '../api/firebase';
 
 export default function ProductDetail() {
   const { productId } = useParams()
-  const [allProducts] = useProducts()
+  // const [allProducts] = useProducts()
   const [productItem, setProductItem] = useState([])
 
   useEffect(() => {
-    const productItem = allProducts.filter((item) => (item.id === productId))
-    setProductItem(productItem)
-  }, [allProducts])
+    // const productItem = allProducts.filter((item) => (item.id === productId))
+    // setProductItem(productItem)
+    getProductDetail(productId).then((res) => (
+      setProductItem(res)
+    ))
+  }, [productId])
   return (
     <>
       {productItem.map((item) => (

@@ -18,6 +18,8 @@ export default function Header() {
 
   const { user } = useAuthContext()
 
+  console.log('user', user)
+
   return (
     <header>
       <div id={style.header}>
@@ -55,7 +57,11 @@ export default function Header() {
         <div id={style.login_wrap}>
           {
             user ?
-              <p id={style.login} onClick={logout}><FaLock />Logout</p>
+              <>
+                <p style={{width:'30px',height:'30px', borderRadius:'15px',overflow:'hidden'}}><img src={user.photoURL} style={{width:'100%'}}/></p>
+                <p>{user.displayName}님 Hi!</p>
+                <p id={style.login} onClick={logout}><FaLock />Logout</p>
+              </>
               :
               <p id={style.login} onClick={login}><FaLock />Login</p>
           }
