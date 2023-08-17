@@ -12,44 +12,45 @@ import './pages/css/reset.css'
 import { isMobile } from 'react-device-detect';
 import MobileRoot from './pages/mobilePages/MobileRoot';
 import MobileHome from './pages/mobilePages/MobileHome';
-
+import { AuthContextProvider } from './context/authContext'
 
 function App() {
 
-  let router= null;
+  let router = null;
 
-  if(isMobile){
-    router=createBrowserRouter([
+  if (isMobile) {
+    router = createBrowserRouter([
       {
-        path:'/',
-        errorElement:<NotFound/>,
-        element:<MobileRoot/>,
-        children:[
-          {path:'/', element:<MobileHome/>}
+        path: '/',
+        errorElement: <NotFound />,
+        element: <MobileRoot />,
+        children: [
+          { path: '/', element: <MobileHome /> }
         ]
       }
     ])
-  }else{
-    router=createBrowserRouter([
+  } else {
+    router = createBrowserRouter([
       {
-        path:'/',
-        errorElement:<NotFound/>,
-        element:<Root/>,
-        children:[
-          {path:'/', element:<Home/>},
-          {path:'/scotchwhisky', element:<ScotchWhisky/>},
-          {path:'/whisky', element:<Whisky/>},
-          {path:'/etcbeverage', element:<EtcBeverage/>},
-          {path:'/whiskysearch', element:<WhiskySearch/>},
-          {path:'/whisky/:productId', element:<ProductDetail/>}
+        path: '/',
+        errorElement: <NotFound />,
+        element: <Root />,
+        children: [
+          { path: '/', element: <Home /> },
+          { path: '/scotchwhisky', element: <ScotchWhisky /> },
+          { path: '/whisky', element: <Whisky /> },
+          { path: '/etcbeverage', element: <EtcBeverage /> },
+          { path: '/whiskysearch', element: <WhiskySearch /> },
+          { path: '/whisky/:productId', element: <ProductDetail /> }
         ]
       }
     ])
   }
   return (
-    <div>
-    <RouterProvider router={router}/>
-    </div>
+    <AuthContextProvider>
+       <RouterProvider router={router} />
+    </AuthContextProvider>
+     
   );
 }
 

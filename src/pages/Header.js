@@ -5,6 +5,8 @@ import { AiFillCaretDown } from "react-icons/ai";
 import { FaLock } from "react-icons/fa";
 import { FaShoppingBag } from "react-icons/fa";
 import { gsap } from 'gsap';
+import { login, logout } from '../api/firebase';
+import { useAuthContext } from '../context/authContext';
 export default function Header() {
   const mainMenus = [
     { index: 0, path: '/scotchwhisky', text: 'Scotch Whisky' },
@@ -14,6 +16,7 @@ export default function Header() {
   ]
   const [clickIndex, setClickIndex] = useState([])
 
+  const { user } = useAuthContext()
 
   return (
     <header>
@@ -22,19 +25,19 @@ export default function Header() {
           <h1 className={style.logo}><Link to='/'>W</Link></h1>
         </div>
         <p className={style.block}></p>
-        <nav id={style.mainmenu} onMouseLeave={()=>{setClickIndex(null)}}>
+        <nav id={style.mainmenu} onMouseLeave={() => { setClickIndex(null) }}>
           <h2 className='hidden'>메인메뉴</h2>
           <ul id={style.mainmenu_list}>
             {
               mainMenus.map((item) => (
-                <li key={item.index} className={`${item.index === clickIndex && style.selected}`} 
-                onMouseEnter={()=>{
-                  setClickIndex(item.index)
-                }}>
+                <li key={item.index} className={`${item.index === clickIndex && style.selected}`}
+                  onMouseEnter={() => {
+                    setClickIndex(item.index)
+                  }}>
                   <Link to={item.path} >
-                    
-                      <span> </span>
-                    
+
+                    <span> </span>
+
                     {item.text}</Link></li>
               ))
             }
@@ -50,7 +53,12 @@ export default function Header() {
         </div>
         <p className={style.block}></p>
         <div id={style.login_wrap}>
-          <p id={style.login}><FaLock />Login</p>
+          {
+            user ?
+              <p id={style.login} onClick={logout}><FaLock />Logout</p>
+              :
+              <p id={style.login} onClick={login}><FaLock />Login</p>
+          }
         </div>
         <p className={style.block}></p>
         <div id={style.shoppingBasket_wrap}>
