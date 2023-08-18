@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import style from './css/header.module.css'
 import { AiFillCaretDown } from "react-icons/ai";
 import { FaLock } from "react-icons/fa";
+import { FaUnlock } from "react-icons/fa";
 import { FaShoppingBag } from "react-icons/fa";
 import { gsap } from 'gsap';
 import { login, logout } from '../api/firebase';
@@ -58,9 +59,11 @@ export default function Header() {
           {
             user ?
               <>
-                <p style={{width:'30px',height:'30px', borderRadius:'15px',overflow:'hidden'}}><img src={user.photoURL} style={{width:'100%'}}/></p>
-                <p>{user.displayName}님 Hi!</p>
-                <p id={style.login} onClick={logout}><FaLock />Logout</p>
+                <div id={style.userInfo}>
+                  <p id={style.userImg}><img src={user.photoURL} /></p>
+                  <p id={style.userName_style}>{user.displayName}님 Hi!</p>
+                </div>
+                <p id={style.login} onClick={logout}><FaUnlock />Logout</p>
               </>
               :
               <p id={style.login} onClick={login}><FaLock />Login</p>
