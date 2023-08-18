@@ -8,8 +8,8 @@ export default function MH_mainVIsualCard() {
         <li id={style.mainVisual_1}>
           <p>Must-drink Bourbon Whiskey</p>
           <div>
-          <p>Bourbon whiskey is renowned for its rich and full-bodied flavor profile.</p>
-          <p><img src=''/></p>
+            <p>Bourbon whiskey is renowned for its rich and full-bodied flavor profile.</p>
+            <p><img src='' /></p>
           </div>
         </li>
         <li id={style.mainVisual_2}>
