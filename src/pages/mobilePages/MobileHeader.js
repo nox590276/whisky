@@ -5,11 +5,14 @@ import { FaLock } from "react-icons/fa";
 import { FaUserPlus } from "react-icons/fa";
 import { HiOutlineHeart } from "react-icons/hi";
 import { FaUser } from "react-icons/fa";
+import { FaUnlock } from "react-icons/fa";
 import { MdArrowBack } from "react-icons/md";
 // import { MdNotificationsNone } from "react-icons/md";
 import styles from './css/mobileHeader.module.css'
 import { gsap } from 'gsap';
 import { click } from '@testing-library/user-event/dist/click';
+import { useAuthContext } from '../../context/authContext';
+import { login, logout } from '../../api/firebase';
 
 export default function MobileHeader() {
   const mainMenuList = [
@@ -66,6 +69,9 @@ export default function MobileHeader() {
       setClickIndex(index)
     }
   }, [clickIndex])
+
+  const { user } = useAuthContext()
+
   return (
     <header id={styles.M_header}>
       <h2 id={styles.M_logo}>W</h2>
@@ -75,7 +81,14 @@ export default function MobileHeader() {
         <div id={styles.M_info_wrap}>
           <p id={styles.back_icon} ref={backIcon} onClick={noneActivateMenu}><MdArrowBack /></p>
           <ul id={styles.M_btnList}>
-            <li><p className={styles.btn_icon}><FaLock /></p><p className={styles.btn_title}>Login</p></li>
+            {
+              user?
+              <li><p className={styles.btn_icon}><FaUnlock/></p>
+              <p className={styles.btn_title} onClick={logout}>Logout</p></li>
+              :
+              <li><p className={styles.btn_icon}><FaLock/></p>
+              <p className={styles.btn_title} onClick={login}>Login</p></li>
+            }
             <li><p className={styles.btn_icon}><FaUserPlus /></p><p className={styles.btn_title}>Sign Up</p></li>
             <li><p className={styles.btn_icon}><HiOutlineHeart /></p><p className={styles.btn_title}>Interest</p></li>
             <li><p className={styles.btn_icon}><FaUser /></p><p className={styles.btn_title}>My Page</p></li>
@@ -84,7 +97,7 @@ export default function MobileHeader() {
         <ul id={styles.M_menu_wrap}>
           {mainMenuList.map((item) => (
             <li key={item.index} className={`${item.index === clickIndex && styles.selected}`}
-              style={item.index === clickIndex ? { height: closeHeight + (closeHeight * item.subMenuList.length)} : { height: closeHeight }}
+              style={item.index === clickIndex ? { height: closeHeight + (closeHeight * item.subMenuList.length) } : { height: closeHeight }}
               onClick={() => {
                 toggleMenu(item.index)
               }}>
