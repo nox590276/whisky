@@ -1,0 +1,81 @@
+section#M_hightLight_wrap{
+  width: 100vw;
+  height: 328px;
+  /* background-color: red; */
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+p.M_title{
+  width: 100vw;
+  height: 39px;
+  font: bold 16px/39px 'Noto Sans';
+  color: black;
+  text-indent: 20px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+ul#M_highLight_goods{
+  width: 543px;
+  height: 233.5px;
+  /* background-color: blue; */
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+ul#M_highLight_goods>li{
+  width: 99px;
+  height: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /* background-color: green; */
+}
+div.M_highLight_goods_section>img{
+  width: 92.5px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -46.25px;
+}
+ div.M_highLight_goods_section{
+  width: 100%;
+  height: 133px;
+  border-radius: 15px 15px 30px 30px;
+  background-color: #F1C376;
+  /* position: absolute;
+  top: 0px;
+  left: 0px;*/
+}
+p.highLightGoods_title{
+  width: 100%;
+  height: 18px;
+  font: bold 6px/11px 'Noto Sans';
+  color: white;
+  text-align: center;
+  padding-top: 14px;
+  margin-bottom: 3px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /* background-color: red; */
+}
+p.highLightGoods_type{
+  width: 100%;
+  height: 10px;
+  font: normal 7px/10px 'Noto Sans';
+  text-align: center;
+  color: #F7E6C4;
+}
+p.highLightGoods_price{
+  width: 100%;
+  height: 11px;
+  font: bold 8px/11px 'Noto Sans';
+  text-align: center;
+  color: #606C5D;
+}

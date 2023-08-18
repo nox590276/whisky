@@ -1,0 +1,36 @@
+section#M_mainVisualCard_wrap{
+  width: 100vw;
+  height: 220px;
+  /* background-color: red; */
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+ul#M_mainVisualCard{
+  width: 619px;
+  height: 170px;
+  position: absolute;
+  top: 20px;
+  left: 37px;
+  /* background-color: #ccc; */
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+ul#M_mainVisualCard>li{
+  width: 305px;
+  height: 100%;
+  border-radius: 15px;
+  background-color: #ccc;
+}
+li#mainVisual_1{
+  background-image: url('/public/images/Must-drinkBourbonWhiskey_backgorund.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+li#mainVisual_2{
+  background-image: url('/public/images/searchBest_point.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
