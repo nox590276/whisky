@@ -14,7 +14,6 @@ export default function MobileHome() {
       <MH_higihtLights/>
       <MH_recommandedContents/>
       <MH_recentlyAdded/>
-      <MH_selectedWhisky/>
     </section>
   )
 }
