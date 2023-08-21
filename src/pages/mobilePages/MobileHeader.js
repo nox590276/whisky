@@ -10,29 +10,30 @@ import { MdArrowBack } from "react-icons/md";
 // import { MdNotificationsNone } from "react-icons/md";
 import styles from './css/mobileHeader.module.css'
 import { gsap } from 'gsap';
-import { click } from '@testing-library/user-event/dist/click';
+// import { click } from '@testing-library/user-event/dist/click';
 import { useAuthContext } from '../../context/authContext';
 import { login, logout } from '../../api/firebase';
+import { Link } from 'react-router-dom';
 
 export default function MobileHeader() {
   const mainMenuList = [
     {
-      index: 0, name: 'Scotch Whisky', pathName: '/', subMenuList: [
+      index: 0, name: 'Scotch Whisky', pathName: '/scotchwhisky', subMenuList: [
         { index: 0, name: 'sub1', pathName: '/' }
       ]
     }, {
-      index: 1, name: 'Whisky', pathName: '/', subMenuList: [
+      index: 1, name: 'Whisky', pathName: '/whisky', subMenuList: [
         { index: 0, name: 'sub1', pathName: '/' },
         { index: 1, name: 'sub2', pathName: '/' },
         { index: 2, name: 'sub3', pathName: '/' }
       ]
     }, {
-      index: 2, name: 'Etc Beverage', pathName: '/', subMenuList: [
+      index: 2, name: 'Etc Beverage', pathName: '/etcbeverage', subMenuList: [
         { index: 0, name: 'sub1', pathName: '/' },
         { index: 1, name: 'sub2', pathName: '/' }
       ]
     }, {
-      index: 3, name: 'Whisky Search', pathName: '/', subMenuList: []
+      index: 3, name: 'Whisky Search', pathName: '/whiskysearch', subMenuList: []
     }
   ]
 
@@ -74,7 +75,7 @@ export default function MobileHeader() {
 
   return (
     <header id={styles.M_header}>
-      <h2 id={styles.M_logo}>W</h2>
+      <h2 id={styles.M_logo}><Link to='/' style={{ textDecoration: 'none', color: '#606C5D' }}>W</Link></h2>
       <p id={styles.M_menuIcon} ref={menuIcon} onClick={activateMenu}><TbMenu2 /></p>
       <p id={styles.M_shoppingListIcon}><HiOutlineShoppingCart /></p>
       <nav id={styles.M_menu_wrap} ref={M_menu_wrap}>
@@ -82,12 +83,12 @@ export default function MobileHeader() {
           <p id={styles.back_icon} ref={backIcon} onClick={noneActivateMenu}><MdArrowBack /></p>
           <ul id={styles.M_btnList}>
             {
-              user?
-              <li><p className={styles.btn_icon}><FaUnlock/></p>
-              <p className={styles.btn_title} onClick={logout}>Logout</p></li>
-              :
-              <li><p className={styles.btn_icon}><FaLock/></p>
-              <p className={styles.btn_title} onClick={login}>Login</p></li>
+              user ?
+                <li><p className={styles.btn_icon}><FaUnlock /></p>
+                  <p className={styles.btn_title} onClick={logout}>Logout</p></li>
+                :
+                <li><p className={styles.btn_icon}><FaLock /></p>
+                  <p className={styles.btn_title} onClick={login}>Login</p></li>
             }
             <li><p className={styles.btn_icon}><FaUserPlus /></p><p className={styles.btn_title}>Sign Up</p></li>
             <li><p className={styles.btn_icon}><HiOutlineHeart /></p><p className={styles.btn_title}>Interest</p></li>
@@ -101,15 +102,18 @@ export default function MobileHeader() {
               onClick={() => {
                 toggleMenu(item.index)
               }}>
-
               {
                 item.subMenuList.length < 1 ?
                   <>
-                    {item.name}
+                    <Link to={item.pathName} style={{ textDecoration: 'none', color: 'black' }}>
+                      {item.name}
+                    </Link>
                   </>
                   :
                   <>
-                    {item.name}
+                    <Link to={item.pathName} style={{ textDecoration: 'none', color: 'black' }}>
+                      {item.name}
+                    </Link>
 
                     <span className={styles.M_arrowIcon}><img src='./images/M_menu_list.svg' alt='' /></span>
                     <ul className={styles.M_subMenuWrap}>

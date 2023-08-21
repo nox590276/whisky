@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { v4 as uuid } from 'uuid';
+// import { v4 as uuid } from 'uuid';
 import {
   getAuth,
   signInWithPopup,
@@ -8,6 +8,9 @@ import {
   onAuthStateChanged,
 } from 'firebase/auth';
 import { getDatabase, ref, set, get, remove, query, orderByKey, equalTo } from 'firebase/database';
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/firestore';
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -86,4 +89,20 @@ export async function getProductDetail(productId) { // 특정 id 와 같은 상�
       return null;
     }
   });
+}
+
+export async function getSelectedType() {
+  // Firebase에서 선택된 유형 데이터를 가져오는 코드
+}
+
+export async function setSelectedTypeInFirebase(selectedType) {
+  // Firebase에서 선택된 유형 데이터를 저장하는 코드
+}
+
+export async function getFilteredProducts() {
+  // Firebase에서 필터링된 제품 데이터를 가져오는 코드
+}
+
+export async function setFilteredProductsInFirebase(filteredProducts) {
+  // Firebase에서 필터링된 제품 데이터를 저장하는 코드
 }

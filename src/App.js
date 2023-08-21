@@ -13,6 +13,10 @@ import { isMobile } from 'react-device-detect';
 import MobileRoot from './pages/mobilePages/MobileRoot';
 import MobileHome from './pages/mobilePages/MobileHome';
 import { AuthContextProvider } from './context/authContext'
+import MobileScotchWhisky from './pages/mobilePages/MobileScotchWhisky';
+import MobileWhisky from './pages/mobilePages/MobileWhisky';
+import MobileEtcbeverage from './pages/mobilePages/MobileEtcbeverage';
+import MobileWhiskySearch from './pages/mobilePages/MobileWhiskySearch';
 
 function App() {
 
@@ -25,7 +29,11 @@ function App() {
         errorElement: <NotFound />,
         element: <MobileRoot />,
         children: [
-          { path: '/', element: <MobileHome /> }
+          { path: '/', element: <MobileHome /> },
+          { path: '/scotchwhisky', element:<MobileScotchWhisky/> },
+          { path: '/whisky', element:<MobileWhisky/> },
+          { path: '/etcbeverage', element:<MobileEtcbeverage/> },
+          { path: '/whiskysearch', element:<MobileWhiskySearch/> },
         ]
       }
     ])

@@ -3,12 +3,13 @@ import MobileHeader from './MobileHeader'
 import MobileHome from './MobileHome'
 import style from './css/mobileApp.module.css'
 import MH_selectedWhisky from './MH_selectedWhisky'
+import { Outlet } from 'react-router-dom'
 
 export default function MobileRoot() {
   return (
-    <div id={style.mobileWrap}>
+    <div id={style.mobileWrap}>  
       <MobileHeader/>
-      <MobileHome/>
+      <Outlet/>
       <MH_selectedWhisky/>
     </div>
   )

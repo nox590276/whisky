@@ -155,3 +155,12 @@ button#addToCart{
   float: left;
   margin-left: 10px;
 }
+p#FaXmark{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  cursor:pointer;
+  /* background-color: red; */
+}
