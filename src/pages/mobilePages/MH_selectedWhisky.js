@@ -34,13 +34,13 @@ export default function MH_selectedWhisky({m_setFilterProducts}) {
   return (
     <section id={style.M_selected_wrap}>
       <ul id={style.M_selected_list}>
-        <li name='whisky' checked={m_selectedType.includes('whisky')} onClick={handleTypeChange}>Whisky</li>
-        <li name='Vodka' checked={m_selectedType.includes('Vodka')} onClick={handleTypeChange}>Vodka</li>
-        <li name='Brandy' checked={m_selectedType.includes('Brandy')} onClick={handleTypeChange}>Brandy</li>
-        <li name='Tequila' checked={m_selectedType.includes('Tequila')} onClick={handleTypeChange}>Tequila</li>
-        <li name='Rum' checked={m_selectedType.includes('Rum')} onClick={handleTypeChange}>Rum</li>
-        <li name='Jin' checked={m_selectedType.includes('Jin')} onClick={handleTypeChange}>Jin</li>
-        <li name='Liqueur' checked={m_selectedType.includes('Liqueur')} onClick={handleTypeChange}>Liqueur</li>
+        <li type='button' name='whisky' checked={m_selectedType.includes('whisky')} onClick={handleTypeChange}>Whisky</li>
+        <li type='button' name='Vodka' checked={m_selectedType.includes('Vodka')} onClick={handleTypeChange}>Vodka</li>
+        <li type='button' name='Brandy' checked={m_selectedType.includes('Brandy')} onClick={handleTypeChange}>Brandy</li>
+        <li type='button' name='Tequila' checked={m_selectedType.includes('Tequila')} onClick={handleTypeChange}>Tequila</li>
+        <li type='button' name='Rum' checked={m_selectedType.includes('Rum')} onClick={handleTypeChange}>Rum</li>
+        <li type='button' name='Jin' checked={m_selectedType.includes('Jin')} onClick={handleTypeChange}>Jin</li>
+        <li type='button' name='Liqueur' checked={m_selectedType.includes('Liqueur')} onClick={handleTypeChange}>Liqueur</li>
       </ul>
     </section>
   )
