@@ -75,7 +75,7 @@ export default function MobileHeader() {
 
   return (
     <header id={styles.M_header}>
-      <h2 id={styles.M_logo}><Link to='/' style={{ textDecoration: 'none', color: '#606C5D' }}>W</Link></h2>
+      <h2 id={styles.M_logo}><Link to='/whiskysearch' style={{ textDecoration: 'none', color: '#606C5D' }}>W</Link></h2>
       <p id={styles.M_menuIcon} ref={menuIcon} onClick={activateMenu}><TbMenu2 /></p>
       <p id={styles.M_shoppingListIcon}><HiOutlineShoppingCart /></p>
       <nav id={styles.M_menu_wrap} ref={M_menu_wrap}>

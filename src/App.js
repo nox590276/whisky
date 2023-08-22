@@ -18,6 +18,7 @@ import MobileWhisky from './pages/mobilePages/MobileWhisky';
 import MobileEtcbeverage from './pages/mobilePages/MobileEtcbeverage';
 import MobileWhiskySearch from './pages/mobilePages/MobileWhiskySearch';
 import MH_selectedWhisky from './pages/mobilePages/MH_selectedWhisky';
+import MobileDetailPage from './pages/mobilePages/MobileDetailPage';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
           { path: '/whisky', element:<MobileWhisky/> },
           { path: '/etcbeverage', element:<MobileEtcbeverage/> },
           { path: '/whiskysearch', element:<MobileWhiskySearch/> },
+          { path: '/whiskysearch/:productId', element:<MobileDetailPage/> },
         ]
       }
     ])
