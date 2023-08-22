@@ -16,13 +16,12 @@ export default function MH_selectedWhisky({m_setFilterProducts}) {
       }
     })
     // const activateMenu =((e)=>{
-    //   if(e==selectedType){
-    //     selectedType.classList.add('selected')
+    //   if(e==m_selectedType){
+    //     m_selectedType.classList.add('selected')
     //   }else{
-    //     selectedType.classList.remove('selected')
+    //     m_selectedType.classList.remove('selected')
     //   }
     // })
-
   }
 
   useEffect(() => {

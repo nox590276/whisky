@@ -6,8 +6,7 @@ import SelectedWhisky from './SelectWhisky'
 import Main from './Main';
 import { getFilteredProducts, setFilteredProductsInFirebase } from '../../api/firebase'; // firebase 관련 함수들을 불러옵니다.
 
-export default function MainSelectedPage({allProducts, setAllProducts, filterType}) {
-
+export default function MainSelectedPage({ allProducts, setAllProducts, filterType }) {
   const [filteredProducts, setFilteredProuducts] = useState([]);
   const [isAnyChechboxChaecked, setIsAnyCheckboxChecked] = useState(false);
 
@@ -28,7 +27,7 @@ export default function MainSelectedPage({allProducts, setAllProducts, filterTyp
     setFilteredProductsInFirebase(filteredProducts); // Firebase로 필터링된 제품들을 저장하는 새로운 함수(이 함수는 직접 구현해야 함)
   }, [filteredProducts]);
 
-  const navigate=useNavigate()
+  const navigate = useNavigate()
 
   return (
     <section id={style.mainSelectedPage_wrap}>
@@ -40,8 +39,8 @@ export default function MainSelectedPage({allProducts, setAllProducts, filterTyp
           <ul id={style.selectedGoods_list}>
             {
               filteredProducts.map((item) => (
-                <li key={item.id} onClick={()=>{
-                  navigate( `/whisky/${item.id}`)
+                <li key={item.id} onClick={() => {
+                  navigate(`/whisky/${item.id}`)
                 }}>
                   <Link>
                     <p className={style.selectedGoods_img}><img src={item.image} alt={item.name} /></p>
