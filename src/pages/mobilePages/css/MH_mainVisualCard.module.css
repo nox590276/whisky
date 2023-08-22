@@ -23,6 +23,9 @@ ul#M_mainVisualCard>li{
   height: 100%;
   border-radius: 15px;
   background-color: #ccc;
+  position: relative;
+  top: 0px;
+  left: 0px;
 }
 li#mainVisual_1{
   background-image: url('/public/images/Must-drinkBourbonWhiskey_backgorund.png');
@@ -33,4 +36,40 @@ li#mainVisual_2{
   background-image: url('/public/images/searchBest_point.png');
   background-repeat: no-repeat;
   background-size: contain;
+}
+p.mainVisual_title{
+  width: 264px;
+  font: bold 18px/25px 'Noto Sans';
+  color: white;
+  margin: 0px auto;
+  padding-top: 30px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+div#MmainVisual_textBox{
+  width: 264px;
+  height: 100px;
+  margin: 0px auto;
+  margin-top: 15px;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  /* background-color: red; */
+}
+p#MmainVisual_img{
+  width: 135px;
+  height: 98.5px;
+  float: left;
+}
+p#MmainVisual_img>img{
+  width: 100%;
+}
+p#MmainVisual_text{
+  width: 129px;
+  height: 66px;
+  float: left;
+  font: normal 12px/18px 'Noto Sans';
+  color: white;
+  text-align: justify;
 }

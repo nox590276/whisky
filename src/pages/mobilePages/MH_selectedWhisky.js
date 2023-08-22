@@ -23,7 +23,7 @@ export default function MH_selectedWhisky({m_setFilterProducts}) {
     //   }
     // })
   }
-
+  
   useEffect(() => {
     const m_filteredProuducts = m_selectedType.length >= 0
       ? allProducts.filter((item) => m_selectedType.includes(item.type))
