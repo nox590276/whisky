@@ -26,7 +26,7 @@ ul#M_highLight_goods{
   justify-content: space-between;
   position: relative;
   top: 0px;
-  left: 0px;
+  left: -200px;
 }
 ul#M_highLight_goods>li{
   width: 99px;
@@ -79,3 +79,26 @@ p.highLightGoods_price{
   text-align: center;
   color: #606C5D;
 }
+/* swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+/* .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
