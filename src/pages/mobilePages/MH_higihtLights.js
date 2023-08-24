@@ -55,7 +55,6 @@ export default function MH_higihtLights() {
             pagination={{
               clickable: false,
             }}
-            // modules={[Pagination]}
             className="mySwiper"
           >
             {

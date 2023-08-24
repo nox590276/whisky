@@ -7,10 +7,8 @@ import { HiOutlineHeart } from "react-icons/hi";
 import { FaUser } from "react-icons/fa";
 import { FaUnlock } from "react-icons/fa";
 import { MdArrowBack } from "react-icons/md";
-// import { MdNotificationsNone } from "react-icons/md";
 import styles from './css/mobileHeader.module.css'
 import { gsap } from 'gsap';
-// import { click } from '@testing-library/user-event/dist/click';
 import { useAuthContext } from '../../context/authContext';
 import { login, logout } from '../../api/firebase';
 import { Link } from 'react-router-dom';

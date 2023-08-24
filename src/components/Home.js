@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import MainVisual from './Home/MainVisual'
 import style from './Home/css/Hom.module.css'
 import MainSelectedPage from './Home/MainSelectedPage';

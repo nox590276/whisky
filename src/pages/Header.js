@@ -5,7 +5,6 @@ import { AiFillCaretDown } from "react-icons/ai";
 import { FaLock } from "react-icons/fa";
 import { FaUnlock } from "react-icons/fa";
 import { FaShoppingBag } from "react-icons/fa";
-// import { gsap } from 'gsap';
 import { login, logout } from '../api/firebase';
 import { useAuthContext } from '../context/authContext';
 export default function Header() {

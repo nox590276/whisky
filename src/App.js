@@ -11,7 +11,6 @@ import ProductDetail from './pages/ProductDetail';
 import './pages/css/reset.css'
 import { isMobile } from 'react-device-detect';
 import MobileRoot from './pages/mobilePages/MobileRoot';
-// import MobileHome from './pages/mobilePages/MobileHome';
 import { AuthContextProvider } from './context/authContext'
 import MobileScotchWhisky from './pages/mobilePages/MobileScotchWhisky';
 import MobileWhisky from './pages/mobilePages/MobileWhisky';

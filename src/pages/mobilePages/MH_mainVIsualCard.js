@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import style from './css/MH_mainVisualCard.module.css'
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -26,7 +25,6 @@ export default function MH_mainVIsualCard() {
           pagination={{
             clickable: false,
           }}
-          // modules={[Pagination]}
           className="mySwiper"
           >
             <SwiperSlide>

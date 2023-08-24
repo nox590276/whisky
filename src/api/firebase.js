@@ -8,7 +8,6 @@ import {
   onAuthStateChanged,
 } from 'firebase/auth';
 import { getDatabase, ref, set, get, remove, query, orderByKey, equalTo } from 'firebase/database';
-import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/firestore';
 
