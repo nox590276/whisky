@@ -1,18 +1,18 @@
 import React from 'react'
-import MH_userBox from './MHUserBox'
-import MH_mainVIsualCard from './MHMainVIsualCard'
-import MH_higihtLights from './MHHigihtLights'
-import MH_recommandedContents from './MHRecommandedContents'
-import MH_recentlyAdded from './MHRecentlyAdded'
+import MHUserBox from './MHUserBox'
+import MHMainVIsualCard from './MHMainVIsualCard'
+import MHHigihtLights from './MHHigihtLights'
+import MHRecommandedContents from './MHRecommandedContents'
+import MHRecentlyAdded from './MHRecentlyAdded'
 
 export default function MobileHome() {
   return (
     <section style={{overflow:'hidden'}}>
-      <MH_userBox/>
-      <MH_mainVIsualCard/>
-      <MH_higihtLights/>
-      <MH_recommandedContents/>
-      <MH_recentlyAdded/>
+      <MHUserBox/>
+      <MHMainVIsualCard/>
+      <MHHigihtLights/>
+      <MHRecommandedContents/>
+      <MHRecentlyAdded/>
     </section>
   )
 }
