@@ -7,7 +7,7 @@ import {
   signOut,
   onAuthStateChanged,
 } from 'firebase/auth';
-import { getDatabase, ref, set, get, remove, query, orderByKey, equalTo } from 'firebase/database';
+import { getDatabase, ref, get, query, orderByKey, equalTo } from 'firebase/database';
 import 'firebase/auth';
 import 'firebase/firestore';
 

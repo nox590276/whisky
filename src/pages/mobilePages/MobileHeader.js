@@ -40,7 +40,7 @@ export default function MobileHeader() {
   const menuIcon = useRef()
 
   let closeHeight = useMemo(() => (55));
-  let openHeight = useMemo(() => (null));
+  // let openHeight = useMemo(() => (null));
 
   const [clickIndex, setClickIndex] = useState(null);
 
@@ -62,7 +62,7 @@ export default function MobileHeader() {
     setClickIndex(null)
   }, [])
   const toggleMenu = useCallback((index) => {
-    if (index == clickIndex) {
+    if (index === clickIndex) {
       setClickIndex(null)
     } else {
       setClickIndex(index)

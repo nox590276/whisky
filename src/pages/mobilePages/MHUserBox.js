@@ -12,7 +12,7 @@ export default function MH_userBox() {
         {
           user ?
             <>
-              <p id={style.userImg}><img src={user.photoURL} /></p>
+              <p id={style.userImg}><img src={user.photoURL} alt=''/></p>
               <p id={style.userName}>Hello,{user.displayName}!</p>
             </>
             :

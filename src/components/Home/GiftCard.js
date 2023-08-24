@@ -13,19 +13,19 @@ export default function GiftCard() {
       <ul id={style.giftCard_contents}>
         <li>
           <p className={style.card_whiskyType}>WHISKEY</p>
-          <p className={style.card_image}><img src='./images/free-icon-whiskey-3875390 3.png'/></p>
+          <p className={style.card_image}><img src='./images/free-icon-whiskey-3875390 3.png' alt=''/></p>
           <p className={style.card_price}>$300</p>
           <button className={style.card_addToCart}>ADD TO CART</button>
         </li>
         <li>
           <p className={style.card_whiskyType}>VODKA</p>
-          <p className={style.card_image}><img src='./images/free-icon-vodka-7455893 4.png'/></p>
+          <p className={style.card_image}><img src='./images/free-icon-vodka-7455893 4.png' alt=''/></p>
           <p className={style.card_price}>$300</p>
           <button className={style.card_addToCart}>ADD TO CART</button>
         </li>
         <li>
           <p className={style.card_whiskyType}>TEQUILA</p>
-          <p className={style.card_image}><img src='./images/free-icon-whiskey-4128603 3.png'/></p>
+          <p className={style.card_image}><img src='./images/free-icon-whiskey-4128603 3.png'alt=''/></p>
           <p className={style.card_price}>$300</p>
           <button className={style.card_addToCart}>ADD TO CART</button>
         </li>

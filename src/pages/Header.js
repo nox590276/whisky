@@ -59,7 +59,7 @@ export default function Header() {
             user ?
               <>
                 <div id={style.userInfo}>
-                  <p id={style.userImg}><img src={user.photoURL} /></p>
+                  <p id={style.userImg}><img src={user.photoURL} alt=''/></p>
                   <p id={style.userName_style}>{user.displayName}님 Hi!</p>
                 </div>
                 <p id={style.login} onClick={logout}><FaUnlock />Logout</p>
