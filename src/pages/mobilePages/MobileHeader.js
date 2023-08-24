@@ -39,7 +39,7 @@ export default function MobileHeader() {
   const backIcon = useRef()
   const menuIcon = useRef()
 
-  let closeHeight = useMemo(() => (55));
+  let closeHeight = useMemo(() => 55, []);
   // let openHeight = useMemo(() => (null));
 
   const [clickIndex, setClickIndex] = useState(null);

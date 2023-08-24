@@ -23,7 +23,7 @@ export default function SelectWhisky({ setFilteredProuducts }) {
       ? allProducts.filter((item) => selectedType.includes(item.type))
       : '';
     setFilteredProuducts(filteredProuducts);
-  }, [selectedType])
+  }, [allProducts, setFilteredProuducts,selectedType])
 
   useEffect(() => {
     // Firebase에서 가져온 선택된 유형에 대한 데이터를 가져옵니다.

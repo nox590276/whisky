@@ -29,7 +29,7 @@ export default function MH_selectedWhisky({m_setFilterProducts}) {
       ? allProducts.filter((item) => m_selectedType.includes(item.type))
       : '';
       m_setFilterProducts(m_filteredProuducts);
-  }, [m_selectedType])
+  }, [allProducts, m_setFilterProducts,m_selectedType])
 
   return (
     <section id={style.M_selected_wrap}>
