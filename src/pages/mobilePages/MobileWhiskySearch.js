@@ -3,7 +3,7 @@ import { FaStar } from 'react-icons/fa'
 import { FaRegHeart } from 'react-icons/fa'
 import style from './css/mobileWhiskySearch.module.css'
 import { getFilteredProducts, setFilteredProductsInFirebase } from '../../api/firebase';
-import MH_selectedWhisky from './MH_selectedWhisky';
+import MH_selectedWhisky from './MHSelectedWhisky';
 import MobileHome from './MobileHome';
 import { Link } from 'react-router-dom';
 

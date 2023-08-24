@@ -1,9 +1,9 @@
 import React from 'react'
-import MH_userBox from './MH_userBox'
-import MH_mainVIsualCard from './MH_mainVIsualCard'
-import MH_higihtLights from './MH_higihtLights'
-import MH_recommandedContents from './MH_recommandedContents'
-import MH_recentlyAdded from './MH_recentlyAdded'
+import MH_userBox from './MHUserBox'
+import MH_mainVIsualCard from './MHMainVIsualCard'
+import MH_higihtLights from './MHHigihtLights'
+import MH_recommandedContents from './MHRecommandedContents'
+import MH_recentlyAdded from './MHRecentlyAdded'
 
 export default function MobileHome() {
   return (

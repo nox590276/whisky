@@ -16,7 +16,7 @@ import MobileScotchWhisky from './pages/mobilePages/MobileScotchWhisky';
 import MobileWhisky from './pages/mobilePages/MobileWhisky';
 import MobileEtcbeverage from './pages/mobilePages/MobileEtcbeverage';
 import MobileWhiskySearch from './pages/mobilePages/MobileWhiskySearch';
-import MH_selectedWhisky from './pages/mobilePages/MH_selectedWhisky';
+import MH_selectedWhisky from './pages/mobilePages/MHSelectedWhisky';
 import MobileDetailPage from './pages/mobilePages/MobileDetailPage';
 
 function App() {
