@@ -1,0 +1,136 @@
+section#MobileDetailPage_wrap{
+  width: 100vw;
+  height: auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+}
+div#MdetailGoods_imgBox{
+  width: 100vw;
+  height: 360px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+}
+p#backBtn{
+  width: 100vw;
+  height: 16.5px;
+  font: normal 16px 'Noto Sans';
+  color: #606C5D;
+  padding-top: 29px;
+  margin-left: 31px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+p#MdetailGoods_type{
+  width: 100vw;
+  height: 19px;
+  font: normal 14px/19px 'Noto Sans';
+  color: #aaa;
+  text-align: center;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+p#MdetailGoods_img{
+  width: 195.5px;
+  height: 260.5px;
+  margin: 0px auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+p#MdetailGoods_img>img{
+  width: 100%;
+}
+div#MdetailGoods_infoBox{
+  width: 100%;
+  height: 240px;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #F1C376;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+p#MdetailGoods_title{
+  width: 100%;
+  height: 44px;
+  font: bold 32px/44px 'Noto Sans';
+  color: white;
+  padding-top: 20px;
+  margin-left: 31px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+p#MdetailGoods_score{
+  width: 100%;
+  height: 14px;
+  font: normal 14px 'Noto Sans';
+  color: #606C5D;
+  margin-left: 31px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+p#MdetailGoods_text{
+  width: 330px;
+  height: 33px;
+  font: normal 8px 'Noto Sans';
+  color: #eee;
+  margin: 0px auto;
+  text-align: justify;
+  margin-top: 25px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+div#MdetailGoods_cashInfo{
+  width: 330px;
+  height: 63.5px;
+  margin: 0px auto;
+  margin-top: 20px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /* background-color: red; */
+}
+p#price_box{
+  width: 100%;
+  height: 22px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /* background-color: green; */
+  border-bottom: solid 1px #eee;
+}
+span#degreeOfDrinking{
+  font: normal 10px/22px 'Noto Sans';
+  color: black;
+  /* background-color: yellow; */
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+span#goodsPrice{
+  font: bold 16px/22px 'Noto Sans';
+  color: #606C5D;
+  text-align: right;
+  /* background-color: blue; */
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+p#addToCart{
+  width: 100%;
+  height: 19px;
+  font: normal 14px/19px 'Noto Sans';
+  color: black;
+  margin-top: 15px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}

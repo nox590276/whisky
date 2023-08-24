@@ -1,0 +1,47 @@
+section#M_selected_wrap{
+  width: 100vw;
+  height: 93px;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+}
+ul#M_selected_list{
+  width: 292px;
+  height: 60px;
+  /* background-color: red; */
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 윗줄 4개 아이템 */
+  grid-template-rows: repeat(2, auto); /* 아랫줄 3개 아이템 */
+  gap: 10px; /* 아이템 간격 */
+  justify-content: center;
+
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  left: 50%;
+  margin-left: -146px;
+}
+ul#M_selected_list>li{
+  width: 70px;
+  height: 20px;
+  border-radius: 20px;
+  border: solid 1px #F1C376;
+  background: none;
+  font: normal 14px/20px 'Noto Sans';
+  color: #F1C376;
+  text-align: center;
+}
+ul#M_selected_list>li.selected{
+  font:normal 14px/20px 'Noto Sans';
+  color: white;
+  background-color: #F1C376;
+}
+ul#M_selected_list>li:hover{
+  font:normal 14px/20px 'Noto Sans';
+  color: white;
+  background-color: #F1C376;
+  transition: 0.3s ease-in-out;
+}
