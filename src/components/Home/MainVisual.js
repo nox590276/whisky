@@ -2,7 +2,7 @@ import React from 'react'
 import MainVisualTextBox from './MainVisualTextbox'
 import MainVisualWhiskyBox from './MainVisualWhiskybox'
 import style_mainvisual from './css/MainVisual.module.css'
-import style_textbox from './css/MainVisualTextbox.module.css'
+import style_textbox from './css/MainVisual_textbox.module.css'
 import style_whiskybox from './css/MainVisual_whiskybox.module.css'
 
 export default function MainVisual() {
