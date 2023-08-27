@@ -10,9 +10,9 @@ export default function MobileHome() {
     <section style={{overflow:'hidden'}}>
       <MHUserBox/>
       <MHMainVIsualCard/>
-      <MHHigihtLights/>
+      <MHHigihtLights/>  
       <MHRecommandedContents/>
       <MHRecentlyAdded/>
     </section>
-  )
+  )   
 }

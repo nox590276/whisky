@@ -11,7 +11,7 @@ export default function MobileWhiskySearch() {
   const [m_filteredProducts, m_setFilterProducts] = useState([]);
   const [m_isAnyChechboxChaecked, m_setIsAnyChechboxChaecked] = useState(false)
 
-  useEffect(() => {
+  useEffect(() => {   
     m_setIsAnyChechboxChaecked(m_filteredProducts.length > 0)
   }, [m_filteredProducts])
 
