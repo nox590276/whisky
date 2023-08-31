@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react'
-import { FaStar } from 'react-icons/fa'
-import { FaRegHeart } from 'react-icons/fa'
-import style from './css/mobileWhiskySearch.module.css'
-import { getFilteredProducts, setFilteredProductsInFirebase } from '../../api/firebase';
+import React, { useEffect, useState } from 'react';
+import { FaStar } from 'react-icons/fa';
+import { FaRegHeart } from 'react-icons/fa';
+import style from './css/mobileWhiskySearch.module.css';
 import MHSelectedWhisky from './MHSelectedWhisky';
 import MobileHome from './MobileHome';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function MobileWhiskySearch() {
   const [m_filteredProducts, m_setFilterProducts] = useState([]);
@@ -15,17 +14,7 @@ export default function MobileWhiskySearch() {
     m_setIsAnyChechboxChaecked(m_filteredProducts.length > 0)
   }, [m_filteredProducts])
 
-  useEffect(() => {
-    getFilteredProducts().then((m_filteredProductsData) => {
-      if (m_filteredProductsData) {
-        m_setFilterProducts(m_filteredProductsData)
-      }
-    })
-  }, []);
-
-  useEffect(() => {
-    setFilteredProductsInFirebase(m_filteredProducts);
-  }, [m_filteredProducts]);
+  const Mnavigate = useNavigate();
 
   return (
     <section id={style.mobileWhiskySearch_wrap}>
@@ -34,7 +23,9 @@ export default function MobileWhiskySearch() {
         <MobileHome />
       ) : (<ul id={style.MselectedGoods_list}>
         {m_filteredProducts.map((item) => (
-          <li key={item.id}>
+          <li key={item.id} onClick={()=>{
+            Mnavigate(`/whiskysearch/${item.id}`)
+          }}>
             <Link>
               <div id={style.MselectedGoods_imgbox}>
                 <p id={style.MselectedGoods_img}><img src={item.image} alt='BOWMORE DISTILLERY' /></p>

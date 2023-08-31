@@ -6,27 +6,14 @@ import SelectedWhisky from './SelectWhisky'
 import Main from './Main';
 import { getFilteredProducts, setFilteredProductsInFirebase } from '../../api/firebase'; // firebase 관련 함수들을 불러옵니다.
 
-export default function MainSelectedPage({ allProducts, setAllProducts, filterType }) {
+export default function MainSelectedPage() {
   const [filteredProducts, setFilteredProuducts] = useState([]);
   const [isAnyChechboxChaecked, setIsAnyCheckboxChecked] = useState(false);
 
   useEffect(() => {
     setIsAnyCheckboxChecked(filteredProducts.length > 0);
   }, [filteredProducts])
-
-  useEffect(() => {
-    // Firebase에서 가져온 필터링된 제품들의 데이터를 가져옵니다.
-    getFilteredProducts().then(filteredProductsData => {
-      if (filteredProductsData) {
-        setFilteredProuducts(filteredProductsData);
-      }
-    });
-  }, []);
-
-  useEffect(() => {
-    setFilteredProductsInFirebase(filteredProducts); // Firebase로 필터링된 제품들을 저장하는 새로운 함수(이 함수는 직접 구현해야 함)
-  }, [filteredProducts]);
-
+  
   const navigate = useNavigate()
 
   return (

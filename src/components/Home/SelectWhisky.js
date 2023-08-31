@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import style from './css/SelectedWhisky.module.css'
 import useProducts from '../../Hooks/useProducts'
-import { getSelectedType , setSelectedTypeInFirebase} from '../../api/firebase';
+import { getSelectedType } from '../../api/firebase';
 
 export default function SelectWhisky({ setFilteredProuducts }) {
   const [allProducts] = useProducts()

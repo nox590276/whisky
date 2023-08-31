@@ -1,46 +1,54 @@
-import React, { useEffect, useState } from 'react'
-import style from './css/MH_selected.module.css'
-import useProducts from '../../Hooks/useProducts'
+import React, { useEffect, useState } from 'react';
+import style from './css/MH_selected.module.css';
+import useProducts from '../../Hooks/useProducts';
+import { getSelectedType } from '../../api/firebase';
 
-export default function MH_selectedWhisky({m_setFilterProducts}) {
+export default function MHSelectedWhisky({m_setFilterProducts}) {
   const [allProducts]= useProducts();
   const[m_selectedType, m_setSelectedType]= useState([]);
+  const M_Whisky = [
+    {index:'aaa',type:'Whisky'},
+    {index:'bbb',type:'Vodka'},
+    {index:'ccc',type:'Brandy'},
+    {index:'ddd',type:'Tequila'},
+    {index:'eee',type:'Rum'},
+    {index:'fff',type:'Jin'},
+    {index:'ggg',type:'Liqueur'}
+  ]
 
-  const handleTypeChange = (e)=>{
-    const updatedSelectedType= e.target.name;
-    m_setSelectedType((prev)=>{
-      if(prev.includes(updatedSelectedType)){
-        return prev.filter((type)=> type !== updatedSelectedType)
-      }else{
-        return [...prev, updatedSelectedType]
-      }
-    })
-    // const activateMenu =((e)=>{
-    //   if(e==m_selectedType){
-    //     m_selectedType.classList.add('selected')
-    //   }else{
-    //     m_selectedType.classList.remove('selected')
-    //   }
-    // })
+  const handleTypeChange = (selectedtype)=>{
+    if(m_selectedType.includes(selectedtype)){
+      m_setSelectedType(m_selectedType.filter(item => item !== selectedtype));
+    }else{
+      m_setSelectedType([...m_selectedType,selectedtype])
+    }
   }
   
   useEffect(() => {
-    const m_filteredProuducts = m_selectedType.length >= 0
+    const m_filteredProuducts = m_selectedType.length > 0
       ? allProducts.filter((item) => m_selectedType.includes(item.type))
       : '';
       m_setFilterProducts(m_filteredProuducts);
   }, [allProducts, m_setFilterProducts,m_selectedType])
 
+  useEffect(() => {
+    // Firebase에서 가져온 선택된 유형에 대한 데이터를 가져옵니다.
+    getSelectedType().then(selectedTypeData => {
+      if (selectedTypeData) {
+        m_setFilterProducts(selectedTypeData);
+      }
+    });
+  }, [allProducts, m_setFilterProducts]);
   return (
     <section id={style.M_selected_wrap}>
       <ul id={style.M_selected_list}>
-        <li type='button' name='whisky' checked={m_selectedType.includes('whisky')} onClick={handleTypeChange}>Whisky</li>
-        <li type='button' name='Vodka' checked={m_selectedType.includes('Vodka')} onClick={handleTypeChange}>Vodka</li>
-        <li type='button' name='Brandy' checked={m_selectedType.includes('Brandy')} onClick={handleTypeChange}>Brandy</li>
-        <li type='button' name='Tequila' checked={m_selectedType.includes('Tequila')} onClick={handleTypeChange}>Tequila</li>
-        <li type='button' name='Rum' checked={m_selectedType.includes('Rum')} onClick={handleTypeChange}>Rum</li>
-        <li type='button' name='Jin' checked={m_selectedType.includes('Jin')} onClick={handleTypeChange}>Jin</li>
-        <li type='button' name='Liqueur' checked={m_selectedType.includes('Liqueur')} onClick={handleTypeChange}>Liqueur</li>
+        {
+          M_Whisky.map(({index, type})=>(
+            <li key={index} style={{backgroundColor:m_selectedType.includes(type)?'#ccc':'#fff'}} onClick={()=>handleTypeChange(type)}>
+              {type}
+            </li>
+          ))
+        }
       </ul>
     </section>
   )

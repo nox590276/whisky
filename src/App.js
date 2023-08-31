@@ -34,7 +34,6 @@ function App() {
           { path: '/scotchwhisky', element:<MobileScotchWhisky/> },
           { path: '/whisky', element:<MobileWhisky/> },
           { path: '/etcbeverage', element:<MobileEtcbeverage/> },
-          { path: '/whiskysearch', element:<MobileWhiskySearch/> },
           { path: '/whiskysearch/:productId', element:<MobileDetailPage/> },
         ]
       }
