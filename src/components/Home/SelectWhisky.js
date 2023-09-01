@@ -4,8 +4,8 @@ import useProducts from '../../Hooks/useProducts'
 import { getSelectedType } from '../../api/firebase';
 
 export default function SelectWhisky({ setFilteredProuducts }) {
-  const [allProducts] = useProducts()
-  const [selectedType, setSelectedType] = useState([])
+  const [allProducts] = useProducts();
+  const [selectedType, setSelectedType] = useState([]);
 
   const handleTypeChange = (e) => {
     const selectedType = e.target.value;

@@ -15,7 +15,6 @@ import { AuthContextProvider } from './context/authContext'
 import MobileScotchWhisky from './pages/mobilePages/MobileScotchWhisky';
 import MobileWhisky from './pages/mobilePages/MobileWhisky';
 import MobileEtcbeverage from './pages/mobilePages/MobileEtcbeverage';
-import MobileWhiskySearch from './pages/mobilePages/MobileWhiskySearch';
 import MHSelectedWhisky from './pages/mobilePages/MHSelectedWhisky';
 import MobileDetailPage from './pages/mobilePages/MobileDetailPage';
 
@@ -31,10 +30,11 @@ function App() {
         element: <MobileRoot />,
         children: [
           { path: '/', element: <MHSelectedWhisky /> },
-          { path: '/scotchwhisky', element:<MobileScotchWhisky/> },
-          { path: '/whisky', element:<MobileWhisky/> },
-          { path: '/etcbeverage', element:<MobileEtcbeverage/> },
-          { path: '/whiskysearch/:productId', element:<MobileDetailPage/> },
+          { path: '/scotchwhisky', element: <MobileScotchWhisky /> },
+          { path: '/whisky', element: <MobileWhisky /> },
+          { path: '/etcbeverage', element: <MobileEtcbeverage /> },
+          { path: '/whiskySearch', element: <MHSelectedWhisky/>},
+          { path: '/whiskysearch/:productId', element: <MobileDetailPage /> }
         ]
       }
     ])
@@ -57,9 +57,9 @@ function App() {
   }
   return (
     <AuthContextProvider>
-       <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </AuthContextProvider>
-     
+
   );
 }
 

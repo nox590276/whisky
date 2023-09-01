@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa";
 import style from './css/MainSelectedPage.module.css'
 import SelectedWhisky from './SelectWhisky'
 import Main from './Main';
-import { getFilteredProducts, setFilteredProductsInFirebase } from '../../api/firebase'; // firebase 관련 함수들을 불러옵니다.
+// import { getFilteredProducts, setFilteredProductsInFirebase } from '../../api/firebase'; // firebase 관련 함수들을 불러옵니다.
 
 export default function MainSelectedPage() {
   const [filteredProducts, setFilteredProuducts] = useState([]);
@@ -13,7 +13,7 @@ export default function MainSelectedPage() {
   useEffect(() => {
     setIsAnyCheckboxChecked(filteredProducts.length > 0);
   }, [filteredProducts])
-  
+
   const navigate = useNavigate()
 
   return (

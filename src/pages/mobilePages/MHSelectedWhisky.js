@@ -7,13 +7,13 @@ export default function MHSelectedWhisky({m_setFilterProducts}) {
   const [allProducts]= useProducts();
   const[m_selectedType, m_setSelectedType]= useState([]);
   const M_Whisky = [
-    {index:'aaa',type:'Whisky'},
-    {index:'bbb',type:'Vodka'},
-    {index:'ccc',type:'Brandy'},
-    {index:'ddd',type:'Tequila'},
-    {index:'eee',type:'Rum'},
-    {index:'fff',type:'Jin'},
-    {index:'ggg',type:'Liqueur'}
+    {index:'abc',type:'Whisky'},
+    {index:'bcd',type:'Vodka'},
+    {index:'cde',type:'Brandy'},
+    {index:'def',type:'Tequila'},
+    {index:'efg',type:'Rum'},
+    {index:'fgh',type:'Jin'},
+    {index:'ghi',type:'Liqueur'}
   ]
 
   const handleTypeChange = (selectedtype)=>{

@@ -12,7 +12,7 @@ export default function MobileWhiskySearch() {
 
   useEffect(() => {   
     m_setIsAnyChechboxChaecked(m_filteredProducts.length > 0)
-  }, [m_filteredProducts])
+  }, [m_filteredProducts])  
 
   const Mnavigate = useNavigate();
 
