@@ -18,7 +18,8 @@ export default function MobileWhiskySearch() {
 
   return (
     <section id={style.mobileWhiskySearch_wrap}>
-      <MHSelectedWhisky m_setFilterProducts={m_setFilterProducts} />
+      <MHSelectedWhisky m_setFilterProducts={m_setFilterProducts} /> 
+      {/* 프롭스로 전달이 안되는이유가 뭐지 */}
       {!m_isAnyChechboxChaecked ? (
         <MobileHome />
       ) : (<ul id={style.MselectedGoods_list}>
