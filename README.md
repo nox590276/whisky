@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+## <Whisky>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+한 줄 소개 | 원하는 양주의 종류별로 한페이지에서 한번에 볼 수 있는 사이트
 
-## Available Scripts
 
-In the project directory, you can run:
+**Front-End Developer**
 
-### `npm start`
+개발기간 | 2023.07~2023.08
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🔗Links
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+WebSite | https://loquacious-eclair-581870.netlify.app/
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📜 서비스 내용
 
-### `npm run build`
+페이지는 다양한 종류의 술 중에서도 위스키와 럼, 보드카, 리큐르와 같은 주요 카테고리로 나뉘어진 위스키리스트 페이지입니다. 각 카테고리마다 관련된 제조사와 원산지 등 중요한 정보가 함께 나열되어있습니다.
+사용자들은 자신이 좋아하는 타입의 술을 선택하면 해당 카테고리 안에서 다양한 종류의 위스키들을 확인할 수 있는 장점이있습니다.
+간결하고 직관적인 인터페이스로 구성된 "Whiskey" 페이지에서는 최소한의 클릭으로도 필요한 정보에 접근할수있습니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+위 서비스에서 제공하는 핵심 기능은 2가지입니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1.위스키, 럼, 보드카, 리큐르 등 원하는 술의 타입을 선택하여 해당 타입에 해당되는 제품들을 한페이지에 구현
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2.위스크에대한 홍보 및 정보제공
 
-### `npm run eject`
+## 🛠 기술 스택
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Figma
+- React.js(18.2)
+- Git (2.39(Apple Git-143))&GitHub
+- Swiper(10.2)
+- FireBase(10.1)
+- Netlify(13.1)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🖥 개발 내용
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### **재사용 가능한 컴포넌트로 효율적인 UI 구축**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+프로젝트에서 공통적으로 사용되는 헤더와 푸터를 각각 독립된 컴포넌트로 설계하여 메인 페이지와 서브 페이지에 재사용하였습니다. 이를 통해 코드의 중복을 최소화하고 유지 보수의 용이성을 높였습니다.
 
-## Learn More
+또한, **React Router**를 사용하여 메인 페이지와 서브 페이지 간의 라우팅을 처리함으로써 불필요한 렌더링을 최소화하였습니다. 이는 애플리케이션의 성능 향상에 기여하였습니다.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+메인 페이지에서는 제품 **필터링 기능을 구현**하기 위해 체크박스 컴포넌트를 만들었습니다. 이 체크박스 컴포넌트는 사용자가 선택하는 옵션에 따라 해당하는 제품들만 보여주도록 설계되었습니다. 체크박스가 선택되지 않았을 때는 메인페이지의 내용들이 나타나며, 특정 체크박스가 선택되면 해당 조건에 맞는 제품만 필터링하여 보여줍니다.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+이러한 방식으로 **재사용 가능한 컴포넌트 설계**를 적극 활용함으로써 개발 과정에서의 중복 작업을 줄이고, 애플리케이션 전체의 일관성과 유지 관리성을 개선했습니다.
 
-### Code Splitting
+### **동적 라우팅을 이용한 효율적인 데이터 관리 및 유연한 페이지 구현**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+프로젝트에서는 **Firebase의 Realtime Database** 기능과 React Router의 동적 라우팅 기능을 결합하여 JSON 데이터를 클라우드에 저장하고, 필요한 데이터만 실시간으로 가져오며, 유연하게 세부 정보 페이지를 구현하였습니다.
 
-### Analyzing the Bundle Size
+Firebase Realtime Database를 이용함으로써 로컬에서 전체 JSON 파일을 로드하는 것보다 훨씬 더 효율적인 데이터 처리가 가능해지며, 애플리케이션이 성장하거나 사용자 기반이 확대될 경우에도 자동 스케일링되어 추가적인 서버 설정 없이 원활한 서비스 제공이 가능했습니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+동시에 React Router의 동적 라우팅 기능은 각 제품의 세부 정보를 보여주는 페이지를 개별적으로 만들지 않고, **하나의 템플릿 페이지에서 바뀌어야 하는 정보만 업데이트하여 코드 중복을 최소화**하고 유지 관리성을 향상시켰으며, 사용자에게 일관된 UI/UX 경험을 제공할 수 있었습니다.
 
-### Making a Progressive Web App
+따라서 이러한 방식은 개발 과정을 간소화하는 동시에 애플리케이션 성능과 사용자 경험 개선에 크게 기여하였습니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### **Firebase Authentication을 이용한 사용자 로그인 시스템 구현**
 
-### Advanced Configuration
+프로젝트에서는 **Firebase의 Authentication** 기능을 활용하여 사용자 로그인 시스템을 구현하였습니다. 이를 통해 사용자는 Google, Facebook 등 다양한 방법으로 간편하게 로그인할 수 있었으며, 이 과정에서 별도의 서버 측 인증 로직을 작성할 필요 없이 안전하게 인증과 인가를 처리할 수 있었습니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Firebase Authentication은 소셜 계정 뿐만 아니라 이메일과 비밀번호를 통한 전통적인 방식, 그리고 전화번호를 통한 SMS 인증 등 다양한 로그인 방식을 지원합니다. 따라서 프로젝트는 사용자의 필요에 따라 가장 편리한 방법으로 애플리케이션에 접근할 수 있도록 하였습니다.
 
-### Deployment
+또한 Firebase Authentication은 보안 문제에 대해서도 신경 쓸 필요가 없습니다. 모든 인증 정보는 안전하게 암호화되어 저장되며, OAuth 2.0 및 OpenID Connect를 준수하여 보안성을 보장합니다.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+이러한 Firebase Authentication의 도입은 애플리케이션의 보안성 강화와 동시에 개발 과정의 단순화와 사용자 경험 개선에 크게 기여하였습니다.
 
-### `npm run build` fails to minify
+## 💡 성장 고찰
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### **리액트를 통한 CSR과 SPA 경험**
+
+처음으로 CSR을 적용하며, 사용자가 다른 페이지로 이동할 때 전체 페이지를 다시 로드하지 않고 필요한 부분만 업데이트하는 능력에 매료되었습니다. 이는 화면 전환의 부드러움과 속도감을 실질적으로 체감하게 해주었고, 그 결과로 웹 애플리케이션의 사용자 경험이 얼마나 중요한지 깨닫게 되었습니다.
+
+또한, SPA 구조를 통해 하나의 HTML 파일 내에서 필요한 컴포넌트만 동적으로 랜더링하는 방식을 경험함으로써, 웹 애플리케이션 개발에 있어서 새로운 관점을 얻었습니다. 전체 페이지를 새로 고침하지 않아도 UI가 원활하게 업데이트되는 모습은 마치 마법 같았습니다.
+
+그 중에서도 useEffect Hook을 활용하여 컴포넌트 렌더링 시점을 세밀하게 관리하는 것은 정말 강력한 도구라는 것을 깨달았습니다. 처음에는 조금 복잡하게 느껴졌지만, 점차 이해가 가면서 불필요한 랜더링을 줄이는 것이 얼마나 중요한지 체감할 수 있었습니다.
+
+## 👀 서비스 화면
+
+![스크린샷 2023-09-01 오후 2.23.39.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d5ebef8f-60b3-4193-93dd-0841a84faf13/9ead586e-0a22-4ddb-8590-0fd139bc463c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-09-01_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_2.23.39.png)
+
+메인 페이지 메인비쥬얼 색션
+
+![스크린샷 2023-09-01 오후 5.43.42.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d5ebef8f-60b3-4193-93dd-0841a84faf13/f7c4c31a-a40d-4f66-bc97-e270ae810f5b/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-09-01_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.43.42.png)
+
+메인페이지 컨텐츠 영역 (체크박스 아무것도 선택안한 상태)
+
+![스크린샷 2023-09-01 오후 5.44.00.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d5ebef8f-60b3-4193-93dd-0841a84faf13/201990a2-3287-445f-8f38-a4fb017b3b18/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-09-01_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.44.00.png)
+
+메인페이지 컨텐츠영역(체크박스에 원하는 타입을 선택한 상태)
